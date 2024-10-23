@@ -1,0 +1,840 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('fonts/Nexa-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+.contenedor-principal {
+    max-width: 100%; /* Asegura que no sobrepase el ancho de la pantalla */
+    padding: 0 15px; /* Añade un pequeño padding para evitar que el contenido toque los bordes */
+}
+
+img, iframe {
+    max-width: 100%; /* Asegura que las imágenes no sobrepasen el ancho del contenedor */
+    height: auto;
+}
+
+.superior {
+    height: 290px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(236, 232, 232);
+    z-index: 1000;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column; /* Apilar logo y menú en columnas */
+    justify-content: center;
+}
+
+.logo-container {
+    padding-top: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.menu { 
+    font-family: 'Nexa', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    font-size: 20px;
+    width: 100%;
+    justify-content: center;
+    gap: 20px; /* Añade espacio entre los elementos */
+    height: 90px;
+}
+
+.menu .nl-contact {
+    border-color: rgba(130, 54, 73, 255);
+    background-color: rgba(130, 54, 73, 255);
+    height: 60px; /* Aumenta la altura aquí para hacer el botón más grande */
+    display: flex; /* Permite centrar el texto dentro del botón */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    padding: 0 20px; /* Espacio horizontal para el botón */
+    border-radius: 10px; /* Opcional: Esquinas redondeadas */
+    color: white; /* Cambia el color del texto a blanco */
+    text-decoration: none; /* Asegura que el texto no tenga subrayado */
+    font-weight: bold; /* Hacer el texto más grueso */
+}
+
+.menu .nav-link .nl-contact{
+    color: white;
+}
+
+.menu .nl-contact:hover {
+    transition: 0.5s; /* Transición suave al cambiar el color */
+    color: blue; /* Cambia el color a azul al hacer hover */
+}
+
+.menu .nav-link {
+    text-decoration: none;
+    color: #333333;
+    transition: color 0.3s;
+}
+
+.menu .nav-link {
+    text-decoration: none;
+    color: #333333; /* Color por defecto para otros enlaces */
+    transition: color 0.3s;
+}
+
+/* Esta regla asegura que el color del texto en el botón de contacto no sea afectado */
+.menu .nav-item .nl-contact {
+    color: white; /* Cambia el color del texto a blanco */
+}
+
+.menu .nav-link:hover {
+    text-decoration: none;
+    color: rgba(130, 54, 73, 255); /* Color al hacer hover */
+}
+
+.carrusel {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.imagenes {
+    display: flex;
+    transition: transform 0.5s ease; /* Para la transición suave al cambiar manualmente */
+}
+
+.imagen {
+    min-width: 100%;
+}
+
+.flecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.flecha.izquierda {
+    left: 10px;
+}
+
+.flecha.derecha {
+    right: 10px;
+}
+
+.inicio {
+    margin-bottom: 40px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Columna en pantallas pequeñas */
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Estilo para las imágenes y el texto */
+.imagen1-pc, .imagen2-pc, .imagen3-pc {
+    width: 80%; /* Ocupan el 80% del ancho del contenedor en pantallas pequeñas */
+    margin: 0 auto; /* Centra las imágenes */
+    margin-bottom: 20px; /* Espacio debajo de cada imagen */
+}
+
+.text-perfect-circle {
+    width: 80%; /* Ancho ajustado al 80% en pantallas pequeñas */
+    margin-left: 10%; /* Centramos el texto usando márgenes */
+    font-size: 1em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-family:'Comic Sans MS', cursive, sans-serif;
+}
+
+
+
+.mision-vision {
+    background-color: rgb(236, 232, 232);
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Disposición en columnas para pantallas pequeñas */
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 120px;
+}
+
+.espacio-blanco{
+    background-color: rgb(236, 232, 232);
+    height: 100px;
+}
+
+.mision, .vision {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 0;
+}
+
+.title-mision, .title-vision {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(130,54,73,255);
+    margin: 0;
+    padding: 10px; /* Asegura que el texto no quede pegado a los bordes */
+    text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+.title-mision p{
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+}
+
+.text-mision, .text-vision {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Ajusta para que el texto no quede apretado */
+    margin: 0;
+    text-align: center; /* Alinea el texto al centro */
+    font-size: 16px;
+    line-height: 1.5; /* Espacio entre líneas para mayor legibilidad */
+}
+
+.text-mision {
+    font-family: 'Nexa', sans-serif;
+    background-color: rgba(130,54,73,255);
+    color: aliceblue;
+}
+
+.text-vision{
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.tv{
+    font-family: 'Nexa', sans-serif;
+    color: white;
+}
+
+.text-vision, .title-mision {
+    background-color: blanchedalmond;
+}
+
+/* Asegúrate de que no haya márgenes en los párrafos dentro del texto */
+.text-mision p, .text-vision p {
+    margin: 0; /* Eliminamos márgenes en los párrafos */
+    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+
+.tittle-section-myv{
+    margin-top: 20px;
+    height: 50px;
+    margin-bottom: 50px;
+    color: rgba(130,54,73,255);
+    font-size: 40px;
+}
+
+.tittle-section-myv h1{
+    font-size: 1.1em;
+    font-family: 'Nexa', sans-serif;
+}
+
+.servicios {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Para que los divs estén uno arriba del otro */
+    align-items: center; /* Centra horizontalmente los divs */
+    width: 100%; /* Asegúrate de que ocupe todo el ancho disponible */
+}
+
+.compras,
+.tyd {
+    height: 450px;
+    width: 55%; /* Asegúrate de que los divs ocupen un porcentaje adecuado en pantallas pequeñas */
+    background-color: rgb(205, 211, 211);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido esté en columna */
+    align-items: center; /* Centra el contenido horizontalmente */
+    margin-bottom: 20px; /* Espacio entre los divs */
+}
+
+.compras, .tyd, .aduanas, .implementacion, .invetario {
+    height: 500px;
+    width: 85%; /* Para pantallas pequeñas */
+    background-color: rgb(205, 211, 211);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Espacio entre los divs */
+    position: relative; /* Para permitir el posicionamiento absoluto de los botones */
+}
+
+.compras-img,
+.tyd-img {
+    height: 160px;
+}
+
+.imagen_compras, .imagen_transporte, .imagen_implementacion, .imagen_aduanas{
+    height: 120px;
+    margin-top: 25%;
+}
+
+.compras-tittle,
+.tyd-tittle {
+    font-family: 'Nexa', sans-serif;
+    margin-top: 20px;
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.compras-opciones,
+.tyd-opciones {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin-top: 10px;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+}
+
+.compras-btn,
+.tyd-btn {
+    margin-top: 35px;
+    display: flex; /* Asegura que los elementos hijos se alineen correctamente */
+    justify-content: center;
+    width: 100%;
+    height: 45px;
+}
+
+.com-inv-btn,
+.tyd-inv-btn {
+    display: flex; /* Permite que el texto esté centrado */
+    align-items: center; /* Centra el texto verticalmente */
+    justify-content: center; /* Centra el texto horizontalmente */
+    height: 30px;
+    width: 48%;
+    border-radius: 14px;
+    background-color: rgb(212, 131, 131);
+    border: none; /* Elimina el borde del botón */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: white; /* Cambia el color del texto si es necesario */
+}
+
+
+
+.com-inv-btn:hover,
+.tyd-inv-btn:hover {
+    transition: 2s;
+    background-color: wheat;
+    cursor: pointer;
+}
+
+.compras-opciones ul,
+.tyd-opciones ul {
+    list-style-type: disc; /* Muestra puntos o viñetas */
+    padding-left: 20px; /* Espaciado para que las viñetas no estén pegadas al borde */
+    margin-top: 10px; /* Espacio superior para las listas */
+}
+
+.compras-opciones ul li,
+.tyd-opciones ul li {
+    margin-bottom: 8px; /* Espacio entre los elementos de la lista */
+    font-size: 16px; /* Ajusta el tamaño del texto */
+    color: #333; /* Color del texto de los elementos */
+}
+
+
+
+.aduanas-img,
+.implementacion-img{
+    height: 120px;
+}
+
+.aduanas-tittle,
+.implementacion-tittle {
+    margin-top: 50px;
+    font-family: 'Nexa', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.aduanas-opciones,
+.implementacion-opciones {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+}
+
+.aduanas-btn,
+.implementacion-btn{
+    margin-top: 35px;
+    display: flex; /* Asegura que los elementos hijos se alineen correctamente */
+    justify-content: center;
+    width: 100%;
+    height: 45px;
+    font-family: 'Nexa', sans-serif;
+    font-size: 1em;
+}
+
+.aduanas-inv-btn,
+.implementacion-inv-btn {
+    height: 30px;
+    width: 48%;
+    border-radius: 14px;
+    background-color: rgb(212, 131, 131);
+    border: none; /* Elimina el borde del botón */
+}
+
+.tyd-btn a, .aduanas-btn a, .implementacion-btn a, .compras-btn a, .inventario-btn a{
+    text-decoration: none;
+    color: black;
+    border: none;
+}
+
+.aduanas-inv-btn:hover,
+.implementacion-inv-btn:hover {
+    transition: 2s;
+    background-color: wheat;
+    cursor: pointer;
+}
+
+.compras-opciones ul,
+.tyd-opciones ul,
+.aduanas-opciones ul,
+.implementacion-opciones ul {
+    list-style-type: none; /* Elimina los puntos */
+    padding: 0; /* Quita el espacio a la izquierda */
+    margin: 0; /* Quita cualquier margen predeterminado */
+    text-align: center; /* Centra horizontalmente el contenido */
+}
+
+.compras-opciones ul li,
+.tyd-opciones ul li,
+.aduanas-opciones ul li,
+.implementacion-opciones ul li {
+    margin-bottom: 8px; /* Espacio entre los elementos */
+    font-size: 16px;
+    color: #333;
+    display: inline-block; /* Asegura que se comporten como bloques para centrado */
+    width: 100%; /* Opcional: Asegura que cada elemento ocupe todo el ancho */
+}
+
+.servicio-extra{
+
+    height: 600px;
+    align-items: center;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column; /* Para que los divs estén uno arriba del otro */
+    align-items: center; /* Centra horizontalmente los divs */
+    width: 100%; /* Asegúrate de que ocupe todo el ancho disponible */
+}
+
+.inventario {
+    height: 500px; /* Altura similar a los demás divs */
+    width: 85%; /* Ancho para pantallas pequeñas */
+    background-color: rgb(205, 211, 211); /* Color de fondo */
+    border-radius: 20px; /* Esquinas redondeadas */
+    display: flex; /* Flexbox para alinear contenido */
+    flex-direction: column; /* Asegura que el contenido esté en columna */
+    align-items: center; /* Centra el contenido horizontalmente */
+    margin-bottom: 20px; /* Espacio entre los divs */
+    position: relative; /* Para el posicionamiento absoluto de los botones */
+}
+
+/* Asegúrate de que la imagen en inventario tenga el mismo estilo */
+.inventario-img, .imagen_inventarios {
+    height: 120px; /* Altura de la imagen */
+    margin-top: 10%; /* Espacio superior */
+}
+
+
+/* Títulos */
+.inventario-tittle {
+    font-family: 'Nexa', sans-serif;
+    margin-top: 50px;
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Opciones de inventario */
+.inventario-opciones {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+}
+
+.inventario-btn {
+    font-family: 'Nexa', sans-serif;
+    font-size: 1em;
+    margin-top: 20px; /* Reduce el margen superior para un mejor ajuste */
+    display: flex; /* Asegura que los elementos hijos se alineen correctamente */
+    justify-content: center; /* Centra el botón horizontalmente */
+    width: 100%; /* Asegura que el botón ocupe todo el ancho */
+    height: 90px; /* Aumenta la altura del botón para mejor accesibilidad */
+}
+
+.inventario-inv-btn {
+    height: 30px; /* Ajusta la altura del botón para que ocupe todo el contenedor */
+    width: 48%; /* Ancho del botón para que no toque los bordes */
+    border-radius: 14px; /* Esquinas redondeadas */
+    background-color: rgb(212, 131, 131); /* Color de fondo */
+    border: none; /* Elimina el borde del botón */
+    display: flex; /* Permite centrar el texto */
+    align-items: center; /* Centra el texto verticalmente */
+    justify-content: center; /* Centra el texto horizontalmente */
+    color: white; /* Color del texto del botón */
+    margin-top: 35px;
+    font-size: 1em; /* Tamaño de fuente */
+}
+
+/* Hover para el botón */
+.inventario-inv-btn:hover {
+    transition: background-color 2s; /* Transición más rápida */
+    background-color: wheat; /* Cambia el color de fondo en hover */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+.inventario-opciones ul {
+    list-style-type: none; /* Elimina los puntos o viñetas */
+    padding: 0; /* Quita el padding predeterminado */
+    margin: 0; /* Quita cualquier margen */
+    text-align: center; /* Centra horizontalmente los elementos */
+}
+
+.inventario-opciones ul li {
+    margin-bottom: 8px; /* Espacio entre los elementos */
+    font-size: 16px; /* Ajusta el tamaño del texto */
+    color: #333; /* Color del texto */
+    display: inline-block; /* Para un mejor control de alineación */
+    width: 100%; /* Asegura que cada elemento ocupe todo el ancho */
+}
+
+.socialmedia-tittle{
+    margin-top: 10%;
+    color: rgba(130,54,73,255);
+    font-size: 3rem;
+    font-family:'Comic Sans MS', cursive, sans-serif;
+}
+
+.icons a {
+    color: white; /* Cambia el color del ícono */
+    text-decoration: none; /* Elimina subrayado de los enlaces */
+    transition: color 0.3s; /* Efecto de transición suave */
+    
+}
+.icon-youtube, .icon-linkedin, .icon-instagram, .icon-facebook{
+    font-size: 3rem;
+    text-align: center;
+} 
+
+
+/* Efecto Hover */
+.linkedin:hover {
+    
+    transform: scale(1.1) ;
+}
+
+.facebook:hover {
+    
+    transform: scale(1.1);
+}
+
+.instagram:hover {
+    
+    transform: scale(1.1);
+}
+
+.youtube:hover {
+    
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: rgb(236, 232, 232);
+    color:#000000;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-family:'Comic Sans MS', cursive, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+}
+
+
+.footer-section h3 {
+    padding-bottom: 5%;
+    border-bottom: 2px solid #000000;
+    text-align: center;
+    
+}
+.footer-section p{
+    margin: 10% 0;
+    text-align: center;
+    font-size: 105%;
+}
+
+.footer-section a {
+    color: #000000;
+    text-decoration: none;
+    
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2%;
+}
+@media (min-width: 768px) {
+    .contenedor-principal {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto; /* Solo aplica el centrado en pantallas más grandes */
+        padding: 0 20px;
+    }
+}
+
+/* ESTILOS PARA PANTALLAS GRANDES */
+@media (min-width: 768px) { /* Para pantallas medianas en adelante (tablets) */
+    
+    .terminos {
+        font-size: 12px; /* Aumentamos el tamaño de la fuente */
+        height: 40px;    /* Aumentamos el alto */
+    }
+    
+    
+    .inventario {
+        width: 70%; /* Ancho ajustado para pantallas medianas */
+        margin: 0 auto; /* Centra el elemento */
+    }
+    
+    .mision, .vision {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    /* Ajustamos el orden de los elementos para la sección de "Misión" */
+     /* Ajustamos el orden de los elementos para la sección de "Misión" */
+     .mision {
+        flex-direction: row-reverse; /* El título "Misión" a la derecha y el texto a la izquierda */
+    }
+
+    .title-mision {
+        order: 2; /* El título "Misión" a la derecha */
+        width: 50%;
+        text-align: right; /* Alineamos el título a la derecha */
+    }
+
+    .text-mision {
+        order: 1; /* El texto "Misión" a la izquierda */
+        width: 50%;
+        text-align: left; /* Alineamos el texto a la izquierda */
+    }
+
+    /* La sección de "Visión" permanece igual */
+    .vision {
+        flex-direction: row-reverse; /* El texto a la izquierda y el título a la derecha */
+    }
+
+    .title-vision {
+        order: 2;
+        width: 50%;
+        text-align: right;
+    }
+
+    .text-vision {
+        order: 1;
+        width: 50%;
+        text-align: left;
+    }
+
+    .inicio {
+        margin-bottom: 90px;
+        flex-direction: row; /* Cambia a filas en pantallas medianas */
+        flex-wrap: wrap; /* Permite que los elementos se dividan en varias filas */
+        justify-content: space-around; /* Distribuye el espacio entre los elementos */
+    }
+
+    .imagen1-pc, .imagen2-pc, .imagen3-pc, .text-perfect-circle {
+        width: 35%; /* Cada elemento ocupará el 35% para hacer dos columnas */
+        margin-bottom: 20px;
+    }
+
+    /* Ajuste solo para la imagen3-pc en pantallas medianas */
+    .imagen3-pc {
+        margin-top: 60px;
+        width: 20%; /* Ocupa 45% del ancho del contenedor */
+
+        margin-bottom: 20px;
+        height: 100px;
+
+    }
+
+    .tx2{
+        margin-right: 9%;
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+
+    .text-perfect-circle {
+
+        text-align: left; /* Cambia el alineamiento del texto */
+        font-size: 1.1em; /* Ajusta el tamaño de la fuente */
+        align-items: center;
+        height: 400px;
+        line-height: 1.5; /* Ajusta la altura de línea para mejor legibilidad */
+    }
+    
+    
+    .superior {
+        flex-direction: row; /* Coloca el logo y el menú en una sola fila */
+        justify-content: space-between;
+        padding: 0 50px;
+        height: 150px; /* Ajusta la altura */
+    }
+
+    .logo-container {
+        width: auto; /* Ajusta el tamaño del contenedor */
+        margin: 0; /* Elimina márgenes adicionales */
+    }
+
+    .menu {
+        justify-content: flex-end; /* Alinea el menú a la derecha */
+        gap: 30px; /* Añade más espacio entre los elementos del menú */
+        margin-right: 0; /* Elimina margen derecho */
+        font-size: 22px; /* Aumenta ligeramente el tamaño del texto */
+    }
+}
+
+
+@media (min-width: 1024px) { /* Para pantallas grandes (laptops y desktops) */
+
+    .terminos {
+        font-size: 14px; /* Aumentamos aún más el tamaño de la fuente */
+        height: 50px;    /* Aumentamos el alto */
+    }
+
+    .inventario {
+        width: 21%; /* Ancho ajustado para pantallas grandes */
+        margin: 0 auto; /* Centra el elemento */
+    }
+    
+    .mision, .vision {
+        justify-content: space-between;
+        width: 80%; /* Un poco más estrecho en pantallas grandes */
+    }
+
+    .title-mision, .text-mision, .title-vision, .text-vision {
+        width: 50%; /* Mantener el ancho en pantallas grandes */
+    }
+    
+    .superior {
+        height: 120px; /* Ajusta la altura para pantallas grandes */
+        padding: 0 100px; /* Más espacio a los lados */
+    }
+
+    .menu {
+        font-size: 24px; /* Aumenta el tamaño del texto en pantallas grandes */
+        gap: 40px; /* Añade más espacio entre los elementos */
+    }
+
+    .inicio {
+        padding: 50px; /* Más espacio alrededor */
+        justify-content: space-between; /* Alinea los elementos de forma balanceada */
+    }
+
+    .imagen1-pc, .imagen2-pc, .imagen3-pc, .text-perfect-circle {
+        width: 40%; /* Mantiene las dos columnas con 40% de ancho */
+        margin-bottom: 40px; /* Mayor separación entre los elementos */
+    }
+
+    /* Ajuste solo para la imagen3-pc en pantallas grandes */
+    .imagen3-pc {
+        width: 25%; /* Ancho ligeramente mayor en pantallas grandes */
+        height: 290px; /* Altura menor */
+        margin-right: 2%; /* Espacio a la derecha para balance */
+    }
+
+
+
+    /* Ajustes para el texto */
+    .text-perfect-circle {
+        text-align: left; /* Alinea el texto a la izquierda */
+        margin-left: 5%; /* Empuja el texto un poco más a la izquierda */
+        font-size: 1.2em; /* Aumenta el tamaño del texto */
+        margin-top: 70px;
+    }
+
+
+
+
+    .servicios {
+        flex-direction: row;
+        justify-content: space-between; /* Espacio entre los divs */
+        flex-wrap: wrap;
+        padding: 0 80px; /* Espacio lateral en pantallas grandes */
+    }
+
+    .compras, .tyd, .aduanas, .implementacion {
+        width: 20%; /* Reduce el ancho en pantallas grandes */
+        margin-bottom: 0;
+        margin-top: 20px;
+        height: 500px; /* Aumenta la altura para alinear mejor los botones */
+    }
+
+    /* Ajuste para imágenes y títulos */
+    .compras-img, .tyd-img, .aduanas-img, .implementacion-img {
+        height: 150px;
+    }
+
+    .compras-tittle, .tyd-tittle, .aduanas-tittle, .implementacion-tittle {
+        font-size: 1.2em;
+    }
+
+    /* Posicionamiento absoluto de los botones para alinear */
+    .compras-btn, .tyd-btn, .aduanas-btn, .implementacion-btn{
+        position: absolute;
+        bottom: 20px; /* Alinea los botones a la misma altura */
+        width: 100%;
+        display: flex;
+        justify-content: center; /* Centra los botones */
+        font-family: 'Nexa', sans-serif;
+        font-size: 1em;
+    }
+
+    .com-inv-btn, .tyd-inv-btn, .aduanas-inv-btn, .implementacion-inv-btn {
+        height: 35px;
+        width: 50%; /* Tamaño del botón */
+    }
+}
