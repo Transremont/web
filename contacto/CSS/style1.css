@@ -18,7 +18,7 @@
 }
 
 .imagenes {
-    width: 3rem; /* Ajusta el tamaño de las imágenes */
+    width: 2rem; /* Ajusta el tamaño de las imágenes */
     height: auto; /* Mantiene la proporción */
     display: block; /* Asegura que se comporte bien en dispositivos móviles */
     margin: auto; /* Centra las imágenes */
