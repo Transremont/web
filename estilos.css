@@ -28,7 +28,7 @@ img, iframe {
 }
 
 .superior {
-    height: 220px;
+    height: 220px; /* Ajusta la altura según tus necesidades */
     align-items: center;
     text-align: center;
     width: 100%;
@@ -36,32 +36,64 @@ img, iframe {
     z-index: 1000;
     padding: 0 20px;
     display: flex;
-    flex-direction: column; /* Apilar logo y menú en columnas */
-    justify-content: center;
-    overflow-x: hidden;
+    flex-direction: row; /* Apila el logo a la izquierda y el menú a la derecha */
+    justify-content: space-between; /* Alinea el contenido de manera que el logo esté a la izquierda y el menú a la derecha */
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
 
 .logo-container {
     padding-top: 10px;
-    width: 100%;
-    margin-bottom: 20px;
+    width: auto; /* Permite ajustar automáticamente según el logo */
+    margin-right: auto;
 }
 
 .menu { 
     font-family: 'Nexa', sans-serif;
+    display: none; /* Oculto por defecto */
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
     list-style: none;
     padding: 0;
     align-items: center; /* Centra los elementos en el eje horizontal */
     font-size: 20px;
+    width: 250px; /* Ancho fijo del menú */
+    justify-content: center;
+    gap: 20px; /* Espacio entre los elementos */
+    height: auto; /* Ajusta la altura automáticamente según el contenido */
     position: absolute; /* Asegura que el menú esté en posición absoluta */
     top: 60px; /* Justo debajo del logo/hamburguesa */
     right: 0; /* Alinea a la derecha */
     background-color: rgb(236, 232, 232); /* Añade fondo si aún no lo tiene */
     transform: translateX(100%); /* Oculta el menú fuera de la pantalla a la derecha */
     transition: transform 0.5s ease; /* Transición suave */
-
+    z-index: 1000; /* Asegura que el menú esté sobre otros elementos */
 }
 
+.menu.active {
+    display: flex; /* Mostrar el menú cuando está activo */
+    transform: translateX(0); /* Mostrar el menú */
+}
+
+.close-menu {
+    font-size: 30px; /* Tamaño del icono de cierre */
+    cursor: pointer; /* Cursor de puntero */
+    color: #333; /* Color del texto */
+    margin-top: 10px; /* Espacio superior para separación */
+    align-self: flex-end; /* Alinea a la derecha dentro del menú */
+}
+
+.close-menu:hover {
+    color: rgba(130, 54, 73, 255); /* Cambia el color al hacer hover */
+}
+
+.close-menu {
+    background: none; /* Sin fondo */
+    border: none; /* Sin borde */
+    font-size: 30px; /* Tamaño del icono de cierre */
+    cursor: pointer; /* Cursor de puntero */
+    color: #333; /* Color del texto */
+    margin-top: 10px; /* Espacio superior para separación */
+    align-self: flex-end; /* Alinea a la derecha dentro del menú */
+}
 
 .menu .nl-contact {
     border-color: rgba(130, 54, 73, 255);
