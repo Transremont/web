@@ -49,24 +49,17 @@ img, iframe {
 
 .menu { 
     font-family: 'Nexa', sans-serif;
-    display: none;
-    flex-direction: column;
     list-style: none;
     padding: 0;
-    align-items: center;
+    align-items: center; /* Centra los elementos en el eje horizontal */
     font-size: 20px;
-    width: 250px;
-    justify-content: center;
-    gap: 20px; /* Añade espacio entre los elementos */
-    height: auto;
     position: absolute; /* Asegura que el menú esté en posición absoluta */
     top: 60px; /* Justo debajo del logo/hamburguesa */
     right: 0; /* Alinea a la derecha */
     background-color: rgb(236, 232, 232); /* Añade fondo si aún no lo tiene */
     transform: translateX(100%); /* Oculta el menú fuera de la pantalla a la derecha */
     transition: transform 0.5s ease; /* Transición suave */
-    z-index: 1000;
-}
+
 
 
 
