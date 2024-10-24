@@ -63,14 +63,14 @@ img, iframe {
     top: 60px; /* Justo debajo del logo/hamburguesa */
     right: 0; /* Alinea a la derecha */
     background-color: rgb(236, 232, 232); /* Añade fondo si aún no lo tiene */
-    transform: translateX(100%); /* Oculta el menú fuera de la pantalla a la derecha */
-    transition: transform 0.5s ease; /* Transición suave */
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
     z-index: 1000; /* Asegura que el menú esté sobre otros elementos */
 }
 
 .menu.active {
     display: flex; /* Mostrar el menú cuando está activo */
-    transform: translateX(0); /* Mostrar el menú */
+    transform: translateX(0); /* Menú visible */
 }
 
 .close-menu {
@@ -126,7 +126,7 @@ img, iframe {
 
 .menu .nav-link {
     text-decoration: none;
-    color: #333333; /* Color por defecto para otros enlaces */
+    color: #333333;
     transition: color 0.3s;
 }
 
@@ -183,6 +183,8 @@ img, iframe {
 .flecha.derecha {
     right: 10px;
 }
+
+
 
 .inicio {
     margin-bottom: 40px;
@@ -678,6 +680,7 @@ footer {
         display: none; /* Oculta el botón hamburguesa en pantallas grandes */
     }
 
+
     .inventario {
         width: 70%; /* Ancho ajustado para pantallas medianas */
         margin: 0 auto; /* Centra el elemento */
@@ -763,9 +766,9 @@ footer {
     
     .superior {
         flex-direction: row; /* Coloca el logo y el menú en una sola fila */
-        justify-content: space-between;
-        padding: 0 50px;
-        height: 150px; /* Ajusta la altura */
+        justify-content: space-between; /* Alinea el logo y el menú con espacio entre ellos */
+        padding: 0 50px; /* Ajusta el padding según sea necesario */
+        height: 150px; /* Ajusta la altura para pantallas grandes */
     }
 
     .logo-container {
@@ -774,10 +777,16 @@ footer {
     }
 
     .menu {
-        justify-content: flex-end; /* Alinea el menú a la derecha */
-        gap: 30px; /* Añade más espacio entre los elementos del menú */
-        margin-right: 0; /* Elimina margen derecho */
-        font-size: 22px; /* Aumenta ligeramente el tamaño del texto */
+        position: static; /* Alinea el menú en su posición normal */
+        transform: none; /* Asegura que no se aplique ninguna transformación */
+        display: flex; /* Muestra el menú de forma predeterminada */
+        flex-direction: row; /* Asegura que los elementos se alineen en fila */
+        gap: 20px; /* Espacio entre los elementos */
+        width: auto; /* Ajusta el ancho al contenido */
+    }
+
+    .close-menu {
+        display: none; /* Oculta el botón de cerrar en pantallas grandes */
     }
 }
 
