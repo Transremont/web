@@ -674,7 +674,10 @@ footer {
         height: 40px;    /* Aumentamos el alto */
     }
     
-    
+    .hamburger {
+        display: none; /* Oculta el botón hamburguesa en pantallas grandes */
+    }
+
     .inventario {
         width: 70%; /* Ancho ajustado para pantallas medianas */
         margin: 0 auto; /* Centra el elemento */
