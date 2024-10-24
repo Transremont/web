@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transremont</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<header>
+
+    <section class="superior" id="superior_id">
+        <div class="logo-container">
+            <img src="IMG/Grupo Transremontlogo.webp" alt="Logo" class="logo-img">
+        </div>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <ul class="menu navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#superior_id">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#m&v_id">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servicios_id">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="Trabajo/index.html">Trabajo</a></li>
+            <li class="nav-item"><a class="nav-link nl-contact" href="contacto/index2.html">Contacto</a></li>
+            <li class="nav-item"><button class="close-menu" id="closeMenu">✖</button></li> <!-- Botón de cerrar -->
+        </ul>
+    </section>
+    
+    
+</header>
+<body>
+
+    <div class="carrusel">
+        <div class="imagenes">
+            <img class="imagen" src="IMG/numero-1.png" alt="Imagen 1">
+            <img class="imagen" src="IMG/numero-2.jpg" alt="Imagen 2">
+            <img class="imagen" src="IMG/numero-1.png" alt="Imagen 3">
+        </div>
+        <button class="flecha izquierda" onclick="cambiarImagen(-1)">&#10094;</button>
+        <button class="flecha derecha" onclick="cambiarImagen(1)">&#10095;</button>
+    </div>
+
+    <script src="dynamic.js"></script>
+    
+
+    <div class="inicio">
+        <p class="text-perfect-circle">
+            Grupo Transremont es una empresa regional, con muchos años de experiencia
+            en Costa Rica y con más de 10 años de experiencia en LATAM, USA y Europa,
+            siendo un importante apoyo para las compañías amparadas a regímenes
+            especiales de aduanas así como para las empresas transnacionales y
+            multinacionales. Hemos ganado la confianza de nuestros clientes mediante
+            servicios que le permiten operar acorde a la legislación y a los entes que
+            regulan el régimen aduanero.
+        </p>
+        <img src="IMG/workers.jfif" alt="imagen" class="imagen2-pc">
+        <img src="IMG/circulo perfecto logo.jpg" alt="imagen" class="imagen3-pc">
+        <p class="text-perfect-circle tx2">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. 
+        </p>
+    </div>
+
+    <section class="mision-vision" id="m&v_id">
+        <div class="tittle-section-myv">
+            <h1>NOSOTROS</h1>
+        </div>
+        <div class="mision">
+            <div class="text-mision">
+                <h1>MISION</h1>                
+            </div>
+            <div class="title-mision">
+                <p>Realizar conexiones internacionales, dirigidas a servicios logísticos especializados de
+                    alta calidad, con el personal y equipo calificado en todas las áreas .Ofreciendo
+                    soluciones integrales y eficientes que garanticen la satisfacción de nuestros clientes.</p>
+            </div>
+        </div>
+        <div class="vision">
+            <div class="title-vision tv">
+                <h1>VISION</h1>
+            </div>
+            <div class="text-vision">
+                <p>Ser la mejor empresa líder, en el mercado nacional e internacional de servicios
+                    logísticos que brinda calidad, confianza y eficiencia a sus clientes.Consolidando
+                    alianzas estrategicas que perduren por años.</p>
+            </div>
+        </div>
+        <div class="espacio-blanco"></div>
+    </section>
+
+    <section class="servicios" id="servicios_id">  
+        
+        <div class="compras">
+            <div class="compras-img">             
+                <img src="IMG/compras e inventario.png" alt="" class="imagen_compras">
+            </div>
+            <div class="compras-tittle">
+                <h1>Proyectos</h1>
+            </div>
+            <div class="compras-opciones">
+                <ul>
+                    <li>Compras Nacionales</li>
+                    <li>Compras Internacionales</li>
+                    <li>Cotizaciones</li>
+                    <li>Inventarios</li>
+                </ul>
+            </div>
+            <div class="compras-btn">
+                <a href="Servicios Transremont/proyectos.html" class="com-inv-btn">Ver más</a>
+            </div>
+        </div>
+        
+        <div class="tyd">
+            <div class="tyd-img">             
+                <img src="IMG/transporte.png" alt="" class="imagen_transporte">
+            </div>
+            <div class="tyd-tittle">
+                <h1>Auditorias</h1>
+            </div>
+            <div class="tyd-opciones">
+                <ul>
+                    <li>Transporte Nacional</li>
+                    <li>Transporte Internacional</li>
+                    <li>Logística</li>
+                    <li>Distribución</li>
+                </ul>
+            </div>
+            <div class="tyd-btn">
+                <a href="Servicios Transremont/auditorias.html" class="com-inv-btn">Ver más</a>
+            </div>            
+        </div>
+
+        <div class="aduanas">
+            <div class="aduanas-img">             
+                <img src="IMG/aduanas.png" alt="" class="imagen_aduanas">
+            </div>
+            <div class="aduanas-tittle">
+                <h1>Aduanas</h1>
+            </div>
+            <div class="aduanas-opciones">
+                <ul>
+                    <li>Importaciones</li>
+                    <li>Exportaciones</li>
+                    <li>Trámites Aduaneros</li>
+                    <li>Clasificación Arancelaria</li>
+                </ul>
+            </div>
+            <div class="aduanas-btn">
+                <a href="Servicios Transremont/aduanas.html" class="com-inv-btn">Ver más</a>
+            </div>
+        </div> <!-- Cierra el div de aduanas aquí -->
+        
+        <div class="implementacion">
+            <div class="implementacion-img">             
+                <img src="IMG/transporte.png" class="imagen_implementacion" alt="">
+            </div>
+            <div class="implementacion-tittle">
+                <h1>Transporte</h1>
+            </div>
+            <div class="implementacion-opciones">
+                <ul>
+                    <li>Implementación Nacional</li>
+                    <li>Implementación Internacional</li>
+                    <li>Consultoría</li>
+                    <li>Capacitación</li>
+                </ul>
+            </div>
+            <div class="implementacion-btn">
+                <a href="Servicios Transremont/Transporte.html" class="com-inv-btn">Ver más</a>
+            </div>
+        </div>    
+    </section>
+    
+    <section class="servicio-extra">
+        <div class="inventario">
+            <div class="inventario-img"> <!-- Cambié esto a inventario-img -->
+                <img src="IMG/Inventarios" class="imagen_inventarios" alt=""> <!-- Asegúrate de que la imagen tenga la extensión correcta -->
+            </div>
+            <div class="inventario-tittle">
+                <h1>Inventarios</h1>
+            </div>
+            <div class="inventario-opciones">
+                <ul>
+                    <li>Implementación Nacional</li>
+                    <li>Implementación Internacional</li>
+                    <li>Consultoría</li>
+                    <li>Capacitación</li>
+                </ul>
+            </div>
+            <div class="inventario-btn">
+                <a href="Servicios Transremont/inventario.html" class="inventario-inv-btn">Ver más</a> <!-- Cambié la clase del botón -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Gerencia@transremont.com </p>
+                <p>+506 4020-2223</p>
+            </div>
+            <div class="footer-section">
+                <div class="icons">
+                <h3>Redes Sociales</h3>
+                <div class="icon-youtube">
+                    <a class='bx bxl-youtube' href="https://www.youtube.com"></a>
+                </div>
+                <div class="icon-instagram">
+                    <a class='bx bxl-instagram-alt' href="https://www.instagram.com/?hl=es"></a>
+                </div>
+                <div class="icon-facebook">
+                    <a class='bx bxl-facebook-circle' href="https://www.facebook.com/grupotransremontcr/?locale=es_LA"></a>
+                </div>
+                <div class="icon-linkedin">
+                    <a class='bx bxl-linkedin-square' href="https://cr.linkedin.com/company/grupotransremont"></a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Transremont. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
