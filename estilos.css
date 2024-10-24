@@ -140,6 +140,12 @@ img, iframe {
     color: rgba(130, 54, 73, 255); /* Color al hacer hover */
 }
 
+.hamburger {
+    font-size: 40px; /* Aumenta el tamaño del icono */
+    margin-left: auto; /* Empuja el icono hamburguesa hacia la derecha */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
 .carrusel {
     position: relative;
     margin: 0 auto;
