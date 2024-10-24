@@ -28,7 +28,7 @@ img, iframe {
 }
 
 .superior {
-    height: 290px;
+    height: 220px;
     align-items: center;
     text-align: center;
     width: 100%;
@@ -38,6 +38,7 @@ img, iframe {
     display: flex;
     flex-direction: column; /* Apilar logo y menú en columnas */
     justify-content: center;
+    overflow-x: hidden;
 }
 
 .logo-container {
@@ -48,16 +49,50 @@ img, iframe {
 
 .menu { 
     font-family: 'Nexa', sans-serif;
-    display: flex;
-    flex-wrap: wrap;
+    display: none;
+    flex-direction: column;
     list-style: none;
     padding: 0;
     align-items: center;
     font-size: 20px;
-    width: 100%;
+    width: 250px;
     justify-content: center;
     gap: 20px; /* Añade espacio entre los elementos */
-    height: 90px;
+    height: auto;
+    position: absolute; /* Asegura que el menú esté en posición absoluta */
+    top: 60px; /* Justo debajo del logo/hamburguesa */
+    right: 0; /* Alinea a la derecha */
+    background-color: rgb(236, 232, 232); /* Añade fondo si aún no lo tiene */
+    transform: translateX(100%); /* Oculta el menú fuera de la pantalla a la derecha */
+    transition: transform 0.5s ease; /* Transición suave */
+    z-index: 1000;
+}
+
+.menu.active {
+    display: flex; /* Mostrar el menú cuando está activo */
+    transform: translateX(0); /* Mostrar el menú */
+}
+
+.close-menu {
+    font-size: 30px; /* Tamaño del icono de cierre */
+    cursor: pointer; /* Cursor de puntero */
+    color: #333; /* Color del texto */
+    margin-top: 10px; /* Espacio superior para separación */
+    align-self: flex-end; /* Alinea a la derecha dentro del menú */
+}
+
+.close-menu:hover {
+    color: rgba(130, 54, 73, 255); /* Cambia el color al hacer hover */
+}
+
+.close-menu {
+    background: none; /* Sin fondo */
+    border: none; /* Sin borde */
+    font-size: 30px; /* Tamaño del icono de cierre */
+    cursor: pointer; /* Cursor de puntero */
+    color: #333; /* Color del texto */
+    margin-top: 10px; /* Espacio superior para separación */
+    align-self: flex-end; /* Alinea a la derecha dentro del menú */
 }
 
 .menu .nl-contact {
