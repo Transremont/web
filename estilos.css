@@ -68,32 +68,7 @@ img, iframe {
     z-index: 1000;
 }
 
-.menu.active {
-    display: flex; /* Mostrar el menú cuando está activo */
-    transform: translateX(0); /* Mostrar el menú */
-}
 
-.close-menu {
-    font-size: 30px; /* Tamaño del icono de cierre */
-    cursor: pointer; /* Cursor de puntero */
-    color: #333; /* Color del texto */
-    margin-top: 10px; /* Espacio superior para separación */
-    align-self: flex-end; /* Alinea a la derecha dentro del menú */
-}
-
-.close-menu:hover {
-    color: rgba(130, 54, 73, 255); /* Cambia el color al hacer hover */
-}
-
-.close-menu {
-    background: none; /* Sin fondo */
-    border: none; /* Sin borde */
-    font-size: 30px; /* Tamaño del icono de cierre */
-    cursor: pointer; /* Cursor de puntero */
-    color: #333; /* Color del texto */
-    margin-top: 10px; /* Espacio superior para separación */
-    align-self: flex-end; /* Alinea a la derecha dentro del menú */
-}
 
 .menu .nl-contact {
     border-color: rgba(130, 54, 73, 255);
