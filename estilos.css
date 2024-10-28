@@ -668,8 +668,26 @@ footer {
     }
 }
 
+
+
 /* ESTILOS PARA PANTALLAS GRANDES */
 @media (min-width: 768px) { /* Para pantallas medianas en adelante (tablets) */
+
+    .carrusel {
+        margin-top: 30px;
+        max-width: 600px;
+        border-radius: 15px;
+    }
+
+    .imagen{
+        height: 400px;
+    }
+
+
+
+    .flecha {
+        padding: 15px; /* Flechas más grandes */
+    }
     
     .terminos {
         font-size: 12px; /* Aumentamos el tamaño de la fuente */
