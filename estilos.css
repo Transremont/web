@@ -491,7 +491,7 @@ img, iframe {
 
     height: 600px;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column; /* Para que los divs estén uno arriba del otro */
     align-items: center; /* Centra horizontalmente los divs */
