@@ -179,11 +179,12 @@ img, iframe {
     flex-wrap: wrap;
     text-align: center;
 }
-.titu-1, .titu-2, .titu-3, .titu-4, .titu-5{
-    padding-top: 10%;
-    padding-bottom: 10%;
-}
 
+.icon-pc{
+    height: 5rem;
+    width: 5rem;
+    margin: 5%;
+}
 
 /*FINAL ESTILOS TRABAJO */
 
