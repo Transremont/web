@@ -6,6 +6,9 @@
     scroll-behavior: smooth;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+
 @font-face {
     font-family: 'Nexa';
     src: url('fonts/Nexa-Regular.ttf') format('truetype');
@@ -83,6 +86,10 @@ img, iframe {
 
 .close-menu:hover {
     color: rgba(130, 54, 73, 255); /* Cambia el color al hacer hover */
+}
+
+.tx2{
+    font-family: 'Rubik', sans-serif;
 }
 
 .close-menu {
@@ -210,7 +217,7 @@ img, iframe {
     font-size: 1em;
     margin-bottom: 20px;
     line-height: 1.6;
-    font-family:'Comic Sans MS', cursive, sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 
@@ -251,7 +258,7 @@ img, iframe {
 }
 
 .title-mision p{
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'Rubik', sans-serif;
     text-align: center;
 }
 
@@ -274,7 +281,7 @@ img, iframe {
 }
 
 .text-vision{
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 .tv{
@@ -360,7 +367,7 @@ img, iframe {
 
 .compras-opciones,
 .tyd-opciones {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'Rubik', sans-serif;
     margin-top: 10px;
     width: 100%; /* Asegura que ocupe todo el ancho */
 }
@@ -429,7 +436,7 @@ img, iframe {
 
 .aduanas-opciones,
 .implementacion-opciones {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'Rubik', sans-serif;
     width: 100%; /* Asegura que ocupe todo el ancho */
 }
 
@@ -528,7 +535,7 @@ img, iframe {
 
 /* Opciones de inventario */
 .inventario-opciones {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'Rubik', sans-serif;
     width: 100%; /* Asegura que ocupe todo el ancho */
 }
 
@@ -582,7 +589,7 @@ img, iframe {
     margin-top: 10%;
     color: rgba(130,54,73,255);
     font-size: 3rem;
-    font-family:'Comic Sans MS', cursive, sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 .icons a {
@@ -623,7 +630,7 @@ footer {
     color:#000000;
     padding-top: 2%;
     padding-bottom: 2%;
-    font-family:'Comic Sans MS', cursive, sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 .footer-container {
@@ -769,7 +776,7 @@ footer {
 
     .tx2{
         margin-right: 9%;
-        font-family: 'Comic Sans MS', cursive, sans-serif;
+        font-family: 'Rubik', sans-serif;
     }
 
     .text-perfect-circle {
