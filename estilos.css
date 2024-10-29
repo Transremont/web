@@ -144,7 +144,7 @@ img, iframe {
 
 .menu .nav-link:hover {
     text-decoration: none;
-    color: rgba(130, 54, 73, 255); /* Color al hacer hover */
+    color: #000000; /* Color al hacer hover */
 }
 
 .hamburger {
@@ -191,7 +191,9 @@ img, iframe {
     right: 10px;
 }
 
-
+.inicio p{
+    text-align: justify;
+}
 
 .inicio {
     margin-bottom: 40px;
@@ -212,6 +214,7 @@ img, iframe {
     border-radius: 20px;
 }
 
+
 .text-perfect-circle {
     width: 80%; /* Ancho ajustado al 80% en pantallas pequeñas */
     margin-left: 10%; /* Centramos el texto usando márgenes */
@@ -219,6 +222,7 @@ img, iframe {
     margin-bottom: 20px;
     line-height: 1.6;
     font-family: 'Rubik', sans-serif;
+
 }
 
 
