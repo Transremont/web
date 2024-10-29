@@ -209,6 +209,7 @@ img, iframe {
     width: 80%; /* Ocupan el 80% del ancho del contenedor en pantallas pequeñas */
     margin: 0 auto; /* Centra las imágenes */
     margin-bottom: 20px; /* Espacio debajo de cada imagen */
+    border-radius: 20px;
 }
 
 .text-perfect-circle {
