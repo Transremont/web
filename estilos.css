@@ -761,6 +761,7 @@ footer {
 
     .imagen1-pc, .imagen2-pc, .imagen3-pc, .text-perfect-circle {
         width: 35%; /* Cada elemento ocupará el 35% para hacer dos columnas */
+        height: 500px;
         margin-bottom: 20px;
     }
 
