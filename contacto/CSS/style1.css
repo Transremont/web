@@ -67,6 +67,9 @@
     text-align: center;
 } 
 
+.p {
+    text-decoration: none;
+}
 
 /* Efecto Hover */
 .linkedin:hover {
