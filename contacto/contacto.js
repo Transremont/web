@@ -1,21 +1,20 @@
-function validateForm() {
-    const nombre = document.forms["myForm"]["name"].value;
-    const apellido = document.forms["myForm"]["last-name"].value;
-    const correo = document.forms["myForm"]["email"].value;
-    const mensaje = document.forms["myForm"]["message"].value;
+const btn = document.getElementById('button');
 
-    if (nombre === "" || apellido === "" || correo === "" || mensaje === "") {
-        alert("Todos los campos son obligatorios.");
-        return false;
-    }
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
 
-    // Validar formato de correo
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(correo)) {
-        alert("Formato de correo electrónico no válido.");
-        return false;
-    }
+   btn.value = 'Sending...';
 
-    // Si todo es válido, enviar el formulario
-    document.getElementById("myForm").submit();
-}
+   const serviceID = 'default_service';
+   const templateID = 'template_6qs4y7e';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
