@@ -5,6 +5,9 @@
     outline: none;
     font-family:'Comic Sans MS', cursive, sans-serif;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
 @font-face {
     font-family: 'Nexa';
     src: url('fonts/Nexa-Regular.ttf') format('truetype');
