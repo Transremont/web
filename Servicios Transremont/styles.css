@@ -172,12 +172,11 @@ footer {
 
 
 .footer-section h3 {
-    padding-bottom: 5%;
+    padding-bottom: 1rem;
     border-bottom: 2px solid #000000;
     text-align: center;
-    
 }
-.footer-section p{
+.footer-section p {
     margin: 10% 0;
     text-align: center;
     font-size: 105%;
@@ -186,7 +185,17 @@ footer {
 .footer-section a {
     color: #000000;
     text-decoration: none;
-    
+    margin: 10% 0;
+    text-align: center;
+    font-size: 105%;
+}
+
+.mail-link {
+    color: #000000;
+    text-decoration: none;
+    margin: 10% 0;
+    text-align: center;
+    font-size: 105%;
 }
 
 .footer-section a:hover {
