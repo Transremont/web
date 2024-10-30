@@ -40,7 +40,7 @@
     width: 45%;
     margin: 0 auto;
     text-align: center;
-    font-family: 'Nexa', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 23px;
 }
 
@@ -93,6 +93,7 @@ footer {
     color:#000000;
     padding-top: 2%;
     padding-bottom: 2%;
+    font-family: 'Rubik', sans-serif;
 }
 
 .footer-container {

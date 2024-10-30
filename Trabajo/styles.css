@@ -60,12 +60,14 @@ img, iframe {
     width: 100%;
     justify-content: center;
     gap: 20px; /* Añade espacio entre los elementos */
+    font-family: 'Rubik', sans-serif;
 }
 
 .menu .nav-link {
     text-decoration: none;
     color: #333333;
     transition: color 0.3s;
+    font-family: 'Rubik', sans-serif;
 }
 
 .menu .nav-link:hover {
@@ -84,6 +86,7 @@ img, iframe {
     justify-content: center;
     flex-wrap: wrap;
     padding: 20px;
+    font-family: 'Rubik', sans-serif;
 }
 
 
@@ -132,6 +135,7 @@ img, iframe {
     padding-bottom: 2%;
     padding-top: 2%;
     border-radius: 20px;
+    font-family: 'Rubik', sans-serif;
     
 }
 .cua-3{
@@ -145,6 +149,7 @@ img, iframe {
     padding-bottom: 2%;
     padding-top: 2%;
     border-radius: 20px;
+    font-family: 'Rubik', sans-serif;
     
 }
 .formas-trabajo{
@@ -168,6 +173,7 @@ img, iframe {
     padding-right: 1%;
     padding-left: 1%;
     border-radius: 20px;
+    font-family: 'Rubik', sans-serif;
     
 }
 .punto-4,.punto-5{
@@ -179,6 +185,7 @@ img, iframe {
     padding-right: 1%;
     padding-left: 1%;
     border-radius: 20px;
+    font-family: 'Rubik', sans-serif;
     
 }
 .puntos{
