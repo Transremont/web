@@ -105,6 +105,7 @@ img, iframe {
     background-color: rgb(236, 232, 232);
     box-shadow: 5px 5px 15px #000000da;
     border-radius: 20px;
+    font-family: 'Rubik', sans-serif;
 }
 .titulo-2{
     width: 40%;
@@ -115,6 +116,7 @@ img, iframe {
     background-color: rgb(236, 232, 232);
     box-shadow: 5px 5px 15px #000000da;
     border-radius: 20px;
+    font-family: 'Rubik', sans-serif;
 }
 .informacion{
     display: flex;
