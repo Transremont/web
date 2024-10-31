@@ -204,7 +204,7 @@ img, iframe {
 }
 
 .inicio {
-    margin-bottom: 40px;
+    margin-bottom: 0px;
     text-align: center;
     width: 100%;
     display: flex;
@@ -310,10 +310,18 @@ img, iframe {
 
 .tittle-section-myv {
     margin-top: 20px;
-    height: 50px;
+    height: 10px;
     margin-bottom: 50px;
     color: rgba(130,54,73,255);
     font-size: 40px;
+}
+
+.nosotros{
+    margin-top: 80px;
+    width: 100%;
+    text-align: center;
+    height: 80px;
+    margin-bottom: 0px;
 }
 
 .tittle-section-myv h1 {
@@ -755,7 +763,7 @@ footer {
     .imagen2-pc,
     .imagen3-pc,
     .text-perfect-circle {
-        width: 35%;
+        width: 39%;
         height: 500px;
         margin-bottom: 20px;
     }
