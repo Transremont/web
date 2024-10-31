@@ -114,7 +114,7 @@ img, iframe {
 }
 
 .menu .nav-link .nl-contact{
-    color: white;
+    color: #000000;
 }
 
 .menu .nl-contact:hover {
@@ -853,6 +853,10 @@ footer {
     .close-menu {
         display: none; /* Oculta el botón de cerrar en pantallas grandes */
     }
+    
+    .nl-contact:hover{
+        color: #000000;
+    }
 }
 
 
@@ -908,6 +912,10 @@ footer {
 
     .menu .nav-link:hover {
         color:rgba(130, 54, 73, 255); /* Color al hacer hover */
+    }
+
+    .nl-contact:hover{
+        color: #000000;
     }
 
     .hamburger {
