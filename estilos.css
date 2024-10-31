@@ -31,7 +31,7 @@ img, iframe {
 }
 
 .superior {
-    height: 220px; /* Ajusta la altura según tus necesidades */
+    height: 220px; /* Mantén la altura para el contenedor superior */
     align-items: center;
     text-align: center;
     width: 100%;
@@ -39,9 +39,10 @@ img, iframe {
     z-index: 1000;
     padding: 0 20px;
     display: flex;
-    flex-direction: row; /* Apila el logo a la izquierda y el menú a la derecha */
-    justify-content: space-between; /* Alinea el contenido de manera que el logo esté a la izquierda y el menú a la derecha */
-    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-x: hidden;
+    position: relative; /* Para que los elementos absolutos se posicionen relativos a este contenedor */
 }
 
 .logo-container {
@@ -52,23 +53,22 @@ img, iframe {
 
 .menu { 
     font-family: 'Nexa', sans-serif;
-    display: flex; /* Oculto por defecto */
-    flex-direction: column;
+    display: flex; 
+    flex-wrap: wrap; /* Permite que los elementos se distribuyan en varias filas */
     list-style: none;
     padding: 0;
-    align-items: center;
+    align-items: center; /* Alinea verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
     font-size: 20px;
-    width: 250px;
-    justify-content: center;
-    gap: 20px;
-    height: auto;
+    width: 100vw; /* Ocupa todo el ancho de la ventana */
+    height: 150px; /* Altura para cubrir el logo */
     position: absolute;
-    top: 60px;
-    right: -250px; /* Coloca el menú fuera de la vista */
+    top: 0; /* En la parte superior */
+    right: -100%; /* Coloca el menú fuera de la vista */
     background-color: rgb(236, 232, 232);
     z-index: 1000;
     opacity: 0; /* Comienza oculto */
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Transición de transform y opacidad */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transición */
 }
 
 .menu.active {
@@ -76,13 +76,7 @@ img, iframe {
     opacity: 1; /* Aumenta la opacidad al mostrar */
 }
 
-.close-menu {
-    font-size: 30px; /* Tamaño del icono de cierre */
-    cursor: pointer; /* Cursor de puntero */
-    color: #333; /* Color del texto */
-    margin-top: 10px; /* Espacio superior para separación */
-    align-self: flex-end; /* Alinea a la derecha dentro del menú */
-}
+
 
 .close-menu:hover {
     color: rgba(130, 54, 73, 255); /* Cambia el color al hacer hover */
@@ -93,16 +87,19 @@ img, iframe {
 }
 
 .close-menu {
-    background: none; /* Sin fondo */
-    border: none; /* Sin borde */
+    align-self: flex-end; /* Coloca el icono de cierre a la derecha */
+    margin-top: 10px; /* Espacio superior para separación */
     font-size: 30px; /* Tamaño del icono de cierre */
     cursor: pointer; /* Cursor de puntero */
     color: #333; /* Color del texto */
-    margin-top: 10px; /* Espacio superior para separación */
-    align-self: flex-end; /* Alinea a la derecha dentro del menú */
+}
+
+.close-menu:hover {
+    color: rgba(130, 54, 73, 255); /* Cambia el color al hacer hover */
 }
 
 .menu .nl-contact {
+    margin-top: auto; /* Empuja el botón de contacto hacia abajo */
     border-color: rgba(130, 54, 73, 255);
     background-color: rgba(130, 54, 73, 255);
     height: 60px; /* Aumenta la altura aquí para hacer el botón más grande */
@@ -125,6 +122,12 @@ img, iframe {
     color: blue; /* Cambia el color a azul al hacer hover */
 }
 
+.nl-contact {
+    width: 100%; /* El botón de contacto ocupará toda la fila inferior */
+    margin-top: 10px; /* Espacio superior para separación */
+}
+
+
 .menu .nav-link {
     text-decoration: none;
     color: #333333;
@@ -140,6 +143,12 @@ img, iframe {
 /* Esta regla asegura que el color del texto en el botón de contacto no sea afectado */
 .menu .nav-item .nl-contact {
     color: white; /* Cambia el color del texto a blanco */
+    margin: 0 15px; /* Espaciado entre los elementos del menú */
+}
+
+.nav-item {
+    width: 33%; /* Cada elemento ocupará un tercio del ancho en la primera fila */
+    text-align: center; /* Centra el texto */
 }
 
 .menu .nav-link:hover {
@@ -152,6 +161,7 @@ img, iframe {
     margin-left: auto;
     cursor: pointer;
 }
+
 .carrusel {
     position: relative;
     margin: 0 auto;
@@ -802,10 +812,10 @@ footer {
     
     
     .superior {
-        flex-direction: row; /* Coloca el logo y el menú en una sola fila */
-        justify-content: space-between; /* Alinea el logo y el menú con espacio entre ellos */
-        padding: 0 50px; /* Ajusta el padding según sea necesario */
-        height: 150px; /* Ajusta la altura para pantallas grandes */
+        height: 150px; /* Ajusta la altura para pantallas medianas */
+        padding: 0 50px; /* Espacio lateral */
+        flex-direction: row; /* Mantiene el logo y menú en una fila */
+        justify-content: space-between; /* Espacio entre el logo y el menú */
     }
 
     .logo-container {
@@ -814,23 +824,30 @@ footer {
     }
 
     .hamburger {
-        display: none; /* Ocultar el icono hamburguesa en pantallas más grandes */
+        display: none; /* Oculta el ícono hamburguesa en pantallas medianas y grandes */
     }
     .menu {
-        display: flex; /* Mostrar el menú normalmente en pantallas grandes */
-        position: static; /* Cambiar a posición estática */
-        flex-direction: row; /* Alinear horizontalmente */
-        transform: none; /* Sin transformación */
-        opacity: 1; /* Asegurar que el menú sea visible */
-        width: auto; /* Ancho automático */
+        display: flex; /* Muestra el menú como flexbox */
+        flex-direction: row; /* Alinea los elementos horizontalmente */
+        position: static; /* Cambia a posición estática */
+        opacity: 1; /* Asegura que el menú sea visible */
         background-color: transparent; /* Fondo transparente */
-        transition: none; /* Sin transición en pantallas grandes */
+        width: auto; /* Ancho automático */
+        font-size: 20px; /* Tamaño de texto para pantallas medianas */
+        align-items: center; /* Centra verticalmente los elementos */
+        gap: 20px; /* Espacio entre los elementos del menú */
     }
     .menu .nav-link {
-        color: #333333; /* Color del texto en el menú */
+        color: #333333; /* Color de los enlaces */
+        text-decoration: none;
+        transition: color 0.3s;
     }
     .menu .nav-link:hover {
         color: #000000; /* Color al hacer hover */
+    }
+
+    .menu .nav-item {
+        width: auto; /* Ajusta el ancho de los elementos del menú */
     }
 
     .close-menu {
@@ -863,12 +880,44 @@ footer {
     .superior {
         height: 120px; /* Ajusta la altura para pantallas grandes */
         padding: 0 100px; /* Más espacio a los lados */
+        justify-content: space-between; /* Alineación con espacio entre logo y menú */
     }
 
     .menu {
-        font-size: 24px; /* Aumenta el tamaño del texto en pantallas grandes */
-        gap: 40px; /* Añade más espacio entre los elementos */
+        display: flex; /* Mostrar el menú como flexbox */
+        flex-direction: row; /* Alinear elementos horizontalmente */
+        position: static; /* Sin posición absoluta */
+        transform: none; /* Sin transformación */
+        opacity: 1; /* Menú siempre visible */
+        background-color: transparent; /* Fondo transparente */
+        width: auto; /* Ajusta el ancho del menú automáticamente */
+        gap: 40px; /* Añade espacio entre elementos */
+        font-size: 24px; /* Tamaño de fuente para pantallas grandes */
+        align-items: center; /* Alinea verticalmente los elementos */
     }
+
+    .menu .nav-item {
+        width: auto; /* Ajusta el ancho de los elementos del menú */
+    }
+
+    .menu .nav-link {
+        color: #333333; /* Color de los enlaces */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .menu .nav-link:hover {
+        color: #000000; /* Color al hacer hover */
+    }
+
+    .hamburger {
+        display: none; /* Ocultar menú hamburguesa en pantallas grandes */
+    }
+
+    .close-menu {
+        display: none; /* Ocultar el botón de cerrar en pantallas grandes */
+    }
+
 
     .inicio {
         padding: 50px; /* Más espacio alrededor */
