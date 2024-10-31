@@ -92,7 +92,9 @@ img, iframe {
     font-size: 30px; /* Tamaño del icono de cierre */
     cursor: pointer; /* Cursor de puntero */
     color: #333; /* Color del texto */
-    
+    background: none; /* Quita el fondo */
+    border: none; /* Quita el borde */
+    padding: 0; /* Quita el relleno */
 }
 
 .close-menu:hover {
