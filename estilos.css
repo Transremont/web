@@ -108,18 +108,18 @@ img, iframe {
     justify-content: center; /* Centra horizontalmente el contenido */
     padding: 0 20px; /* Espacio horizontal para el botón */
     border-radius: 10px; /* Opcional: Esquinas redondeadas */
-    color: white; /* Cambia el color del texto a blanco */
+    color: black; /* Cambia el color del texto a blanco */
     text-decoration: none; /* Asegura que el texto no tenga subrayado */
     font-weight: bold; /* Hacer el texto más grueso */
 }
 
 .menu .nav-link .nl-contact{
-    color: #000000;
+    color: black;
 }
 
 .menu .nl-contact:hover {
     transition: 0.5s; /* Transición suave al cambiar el color */
-    color: blue; /* Cambia el color a azul al hacer hover */
+    color: black; /* Cambia el color a azul al hacer hover */
 }
 
 .nl-contact {
@@ -153,7 +153,7 @@ img, iframe {
 
 .menu .nav-link:hover {
     text-decoration: none;
-    color: #000000; /* Color al hacer hover */
+    color: black; /* Color al hacer hover */
 }
 
 .hamburger {
@@ -843,7 +843,7 @@ footer {
         transition: color 0.3s;
     }
     .menu .nav-link:hover {
-        color: rgba(130, 54, 73, 255); /* Color al hacer hover */
+        color: black; /* Color al hacer hover */
     }
 
     .menu .nav-item {
@@ -855,7 +855,7 @@ footer {
     }
     
     .nl-contact:hover{
-        color: #000000;
+        color: black;
     }
 }
 
@@ -911,7 +911,7 @@ footer {
     }
 
     .menu .nav-link:hover {
-        color:rgba(130, 54, 73, 255); /* Color al hacer hover */
+        color: black; /* Color al hacer hover */
     }
 
     .nl-contact:hover{
