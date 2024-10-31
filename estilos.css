@@ -442,6 +442,7 @@ img, iframe {
 .implementacion-opciones {
     font-family: 'Rubik', sans-serif;
     width: 100%;
+    margin-top: 10px;
 }
 
 .aduanas-btn,
