@@ -52,6 +52,7 @@ img, iframe {
 }
 
 .menu { 
+    margin-top: 40px;
     font-family: 'Nexa', sans-serif;
     display: flex; 
     flex-wrap: wrap; /* Permite que los elementos se distribuyan en varias filas */
@@ -830,6 +831,7 @@ footer {
         display: none; /* Oculta el ícono hamburguesa en pantallas medianas y grandes */
     }
     .menu {
+        margin-top: 0px;
         display: flex; /* Muestra el menú como flexbox */
         flex-direction: row; /* Alinea los elementos horizontalmente */
         position: static; /* Cambia a posición estática */
@@ -891,6 +893,7 @@ footer {
     }
 
     .menu {
+        margin-top: 0px;
         display: flex; /* Mostrar el menú como flexbox */
         flex-direction: row; /* Alinear elementos horizontalmente */
         position: static; /* Sin posición absoluta */
