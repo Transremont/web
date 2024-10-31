@@ -7,15 +7,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
 
-
 @font-face {
     font-family: 'Nexa';
     src: url('fonts/Nexa-Regular.ttf') format('truetype');
     font-weight: normal;
 }
+
 html, body {
     width: 100%;
-    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    overflow-x: hidden;
 }
 
 .superior {
@@ -27,7 +27,7 @@ html, body {
     z-index: 1000;
     padding: 0 20px;
     display: flex;
-    flex-direction: column; /* Apilar logo y menú en columnas */
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -45,7 +45,7 @@ html, body {
     font-size: 20px;
     width: 100%;
     justify-content: center;
-    gap: 20px; /* Añade espacio entre los elementos */
+    gap: 20px;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -54,7 +54,6 @@ html, body {
     color: #333333;
     transition: color 0.3s;
     font-family: 'Rubik', sans-serif;
-    
 }
 
 .menu .nav-link:hover {
@@ -66,16 +65,18 @@ html, body {
 .seccion-1, .seccion-2 {
     display: flex;
 }
+
 .imagen1, .imagen2 {
     width: 50%;
     padding: 2%;
 }
-.imagen2{
+
+.imagen2 {
     background-color: rgba(130,54,73,255);
     opacity: 0.8;
-    
 }
-.texto{
+
+.texto {
     text-align: center;
     width: 100%;
     height: 96%;
@@ -83,32 +84,35 @@ html, body {
     font-family: 'Rubik', sans-serif;
 }
 
-.h-3{
+.h-3 {
     height: 55%;
     font-size: 4vw;
     background-color: rgba(255,255,255,0.8);
     font-family: 'Nexa', sans-serif;
 }
 
-.h-1{
+.h-1 {
     height: 50%;
     font-size: 4vw;
     padding-top: 5%;
     background-color: rgba(255,255,255,0.8);
 }
-.-p{
+
+.-p {
     height: 50%;
     font-size: 2vw;
     padding-top: 5%;
     background-color: rgba(255,255,255,0.8);
     font-family: 'Rubik', sans-serif;
 }
-.h-4{
+
+.h-4 {
     height: 30%;
     font-size: 3vw;
     background-color: rgba(255,255,255,0.8);
 }
-.-p4{
+
+.-p4 {
     height: 70%;
     font-size: 2vw;
     padding-bottom: 10%;
@@ -116,7 +120,7 @@ html, body {
     font-family: 'Rubik', sans-serif;
 }
 
-.socialmedia-tittle{
+.socialmedia-tittle {
     margin-top: 10%;
     color: rgba(130,54,73,255);
     font-size: 3rem;
@@ -124,41 +128,35 @@ html, body {
 }
 
 .icons a {
-    color: white; /* Cambia el color del ícono */
-    text-decoration: none; /* Elimina subrayado de los enlaces */
-    transition: color 0.3s; /* Efecto de transición suave */
-    
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
 }
-.icon-youtube, .icon-linkedin, .icon-instagram, .icon-facebook{
+
+.icon-youtube, .icon-linkedin, .icon-instagram, .icon-facebook {
     font-size: 3rem;
     text-align: center;
-} 
+}
 
-
-/* Efecto Hover */
 .linkedin:hover {
-    
-    transform: scale(1.1) ;
+    transform: scale(1.1);
 }
 
 .facebook:hover {
-    
     transform: scale(1.1);
 }
 
 .instagram:hover {
-    
     transform: scale(1.1);
 }
 
 .youtube:hover {
-    
     transform: scale(1.1);
 }
 
 footer {
     background-color: rgb(236, 232, 232);
-    color:#000000;
+    color: #000000;
     padding-top: 2%;
     padding-bottom: 2%;
     font-family: 'Rubik', sans-serif;
@@ -170,12 +168,12 @@ footer {
     max-width: 100%;
 }
 
-
 .footer-section h3 {
     padding-bottom: 1rem;
     border-bottom: 2px solid #000000;
     text-align: center;
 }
+
 .footer-section p {
     margin: 10% 0;
     text-align: center;
@@ -208,36 +206,34 @@ footer {
 }
 
 @media (min-width: 768px) {
-
     .superior {
-        flex-direction: row; /* Coloca el logo y el menú en una sola fila */
+        flex-direction: row;
         justify-content: space-between;
         padding: 0 50px;
-        height: 150px; /* Ajusta la altura */
+        height: 150px;
     }
 
     .logo-container {
-        width: auto; /* Ajusta el tamaño del contenedor */
-        margin: 0; /* Elimina márgenes adicionales */
+        width: auto;
+        margin: 0;
     }
 
     .menu {
-        justify-content: flex-end; /* Alinea el menú a la derecha */
-        gap: 30px; /* Añade más espacio entre los elementos del menú */
-        margin-right: 17%; /* Elimina margen derecho */
-        font-size: 22px; /* Aumenta ligeramente el tamaño del texto */
+        justify-content: flex-end;
+        gap: 30px;
+        margin-right: 17%;
+        font-size: 22px;
     }
-
 }
 
 @media (min-width: 1024px) {
     .superior {
-        height: 120px; /* Ajusta la altura para pantallas grandes */
-        padding: 0 100px; /* Más espacio a los lados */
+        height: 120px;
+        padding: 0 100px;
     }
 
     .menu {
-        font-size: 24px; /* Aumenta el tamaño del texto en pantallas grandes */
-        gap: 40px; /* Añade más espacio entre los elementos */
+        font-size: 24px;
+        gap: 40px;
     }
 }
