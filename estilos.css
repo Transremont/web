@@ -843,7 +843,7 @@ footer {
         transition: color 0.3s;
     }
     .menu .nav-link:hover {
-        color: #000000; /* Color al hacer hover */
+        color: rgba(130, 54, 73, 255); /* Color al hacer hover */
     }
 
     .menu .nav-item {
@@ -907,7 +907,7 @@ footer {
     }
 
     .menu .nav-link:hover {
-        color: #000000; /* Color al hacer hover */
+        color:rgba(130, 54, 73, 255); /* Color al hacer hover */
     }
 
     .hamburger {
