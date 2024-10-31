@@ -27,14 +27,20 @@ setInterval(() => {
 }, 3000);
 
 
-const hamburger = document.getElementById('hamburger');
-const menu = document.querySelector('.menu');
-const closeMenu = document.getElementById('closeMenu');
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+    const closeMenu = document.getElementById('closeMenu');
 
-hamburger.addEventListener('click', () => {
-    menu.classList.add('active'); // Agrega la clase active para mostrar el menú
-});
+    if (hamburger && menu) {
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('active'); // Alternar clase para mostrar/ocultar menú
+        });
 
-closeMenu.addEventListener('click', () => {
-    menu.classList.remove('active'); // Quita la clase active para ocultar el menú
+        closeMenu.addEventListener('click', () => {
+            menu.classList.remove('active'); // Cerrar menú al hacer clic en el botón
+        });
+    } else {
+        console.error('Elementos no encontrados en el DOM');
+    }
 });
