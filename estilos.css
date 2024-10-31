@@ -99,7 +99,7 @@ img, iframe {
     color: black;
 }
 
-.menu .nl-contact {
+.menu .nav-link-nl-contact {
     margin-top: auto;
     border-color: rgba(130, 54, 73, 255);
     background-color: rgba(130, 54, 73, 255);
@@ -109,7 +109,7 @@ img, iframe {
     justify-content: center;
     padding: 0 20px;
     border-radius: 10px;
-    color: black;
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
@@ -118,17 +118,17 @@ img, iframe {
     color: black;
 }
 
-.menu .nl-contact:hover {
+.menu .nav-link-nl-contact:hover {
     transition: 0.5s;
     color: black;
 }
 
-.nl-contact {
+.nav-link-nl-contact {
     width: 100%;
     margin-top: 10px;
 }
 
-.menu .nav-link {
+.menu .nav-link  {
     text-decoration: none;
     color: #333333;
     transition: color 0.3s;
@@ -140,7 +140,7 @@ img, iframe {
     transition: color 0.3s;
 }
 
-.menu .nav-item .nl-contact {
+.menu .nav-item-nl-contact {
     color: white;
     margin: 0 15px;
 }
@@ -152,7 +152,7 @@ img, iframe {
 
 .menu .nav-link:hover {
     text-decoration: none;
-    color: black;
+    color: rgba(130,54,73,255);
 }
 
 .hamburger {
@@ -814,7 +814,7 @@ footer {
     }
 
     .menu .nav-link:hover {
-        color: black;
+        color: rgba(130,54,73,255);
     }
 
     .menu .nav-item {
@@ -885,7 +885,7 @@ footer {
     }
 
     .menu .nav-link:hover {
-        color: black;
+        color: rgba(130,54,73,255);
     }
 
     .nl-contact:hover {
