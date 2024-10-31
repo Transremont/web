@@ -79,7 +79,7 @@ img, iframe {
 
 
 .close-menu:hover {
-    color: rgba(130, 54, 73, 255); /* Cambia el color al hacer hover */
+    color: black; /* Cambia el color al hacer hover */
 }
 
 .tx2{
@@ -95,7 +95,7 @@ img, iframe {
 }
 
 .close-menu:hover {
-    color: rgba(130, 54, 73, 255); /* Cambia el color al hacer hover */
+    color: black; /* Cambia el color al hacer hover */
 }
 
 .menu .nl-contact {
