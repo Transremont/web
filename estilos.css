@@ -400,6 +400,7 @@ img, iframe {
     border: none;
     text-decoration: none;
     color: white;
+    font-family: 'Rubik', sans-serif;
 }
 
 .com-inv-btn:hover,
@@ -977,5 +978,6 @@ footer {
     .implementacion-inv-btn {
         height: 35px;
         width: 50%;
+        font-family: 'Rubik', sans-serif;
     }
 }
