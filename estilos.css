@@ -490,7 +490,7 @@ img, iframe {
 
 .implementacion-opciones {
     font-family: 'Rubik', sans-serif;
-    width: 100%;
+    width: 90%;
     margin-top: 10px;
 }
 
@@ -504,7 +504,7 @@ img, iframe {
 }
 
 .implementacion-btn {
-    margin-top: 35px;
+    margin-top: 70px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -590,7 +590,7 @@ img, iframe {
 
 .inventario-opciones {
     font-family: 'Rubik', sans-serif;
-    width: 100%;
+    width: 90%;
 }
 
 .inventario-btn {
