@@ -797,7 +797,7 @@ footer {
 
     .logo-container {
         width: auto;
-        margin: 0;
+        margin-left: 50px;
     }
 
     .hamburger {
@@ -879,7 +879,7 @@ footer {
         opacity: 1;
         background-color: transparent;
         width: auto;
-        gap: 40px;
+        gap: 30px;
         font-size: 24px;
         align-items: center;
     }
