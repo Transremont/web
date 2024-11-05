@@ -677,8 +677,8 @@ img, iframe {
 }
 
 footer {
-    background-color: rgb(236, 232, 232);
-    color: #000000;
+    background-color: #000000dc;
+    color: rgb(236, 232, 232);
     padding-top: 2%;
     padding-bottom: 2%;
     font-family: 'Rubik', sans-serif;
@@ -692,7 +692,8 @@ footer {
 
 .footer-section h3 {
     padding-bottom: 1rem;
-    border-bottom: 2px solid #000000;
+    color: rgb(236, 232, 232);
+    border-bottom: 2px solid rgb(236, 232, 232);
     text-align: center;
 }
 
@@ -703,7 +704,7 @@ footer {
 }
 
 .footer-section a {
-    color: #000000;
+    color: rgb(236, 232, 232);
     text-decoration: none;
     margin: 10% 0;
     text-align: center;
@@ -711,7 +712,7 @@ footer {
 }
 
 .mail-link {
-    color: #000000;
+    color: rgb(236, 232, 232);
     text-decoration: none;
     margin: 10% 0;
     text-align: center;
@@ -720,6 +721,7 @@ footer {
 
 .footer-section a:hover {
     text-decoration: underline;
+    color: rgb(236, 232, 232);
 }
 
 .footer-bottom {
