@@ -35,7 +35,7 @@ html, body {
     text-align: center;
     margin: 2%;
     font-family: 'Rubik', sans-serif;
-    font-size: 2rem;
+    font-size: 150%;
     color: rgba(130,54,73,255);
 
 }
@@ -233,6 +233,9 @@ footer {
         margin-right: 17%;
         font-size: 22px;
     }
+    .titulo{
+        font-size: 2rem;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -244,5 +247,8 @@ footer {
     .menu {
         font-size: 24px;
         gap: 40px;
+    }
+    .titulo{
+        font-size: 2rem;
     }
 }
