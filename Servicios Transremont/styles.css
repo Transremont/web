@@ -31,6 +31,15 @@ html, body {
     justify-content: center;
 }
 
+.titulo{
+    text-align: center;
+    margin: 2%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 2rem;
+
+}
+
+
 .logo-container {
     width: 100%;
     margin-bottom: 20px;
@@ -79,7 +88,7 @@ html, body {
 .texto {
     text-align: center;
     width: 100%;
-    height: 96%;
+    height: 100%;
     position: relative;
     font-family: 'Rubik', sans-serif;
 }
@@ -94,7 +103,7 @@ html, body {
 .h-1 {
     height: 50%;
     font-size: 4vw;
-    padding-top: 5%;
+    padding-top: 9%;
     background-color: rgba(255,255,255,0.8);
 }
 
@@ -107,15 +116,14 @@ html, body {
 }
 
 .h-4 {
-    height: 30%;
-    font-size: 3vw;
+    height: 40%;
+    font-size: 4vw;
     background-color: rgba(255,255,255,0.8);
 }
 
 .-p4 {
-    height: 70%;
+    height: 60%;
     font-size: 2vw;
-    padding-bottom: 10%;
     background-color: rgba(255,255,255,0.8);
     font-family: 'Rubik', sans-serif;
 }
