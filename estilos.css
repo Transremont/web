@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: none;
+    outline:none;
     scroll-behavior: smooth;
 }
 
@@ -34,7 +34,7 @@ img, iframe {
     align-items: center;
     text-align: center;
     width: 100%;
-    background-color: rgb(236, 232, 232);
+    
     z-index: 1000;
     padding: 0 20px;
     display: flex;
@@ -161,6 +161,10 @@ img, iframe {
     cursor: pointer;
 }
 
+.Carrusell{
+    background-color: rgb(236, 232, 232);
+}
+
 .carrusel {
     position: relative;
     margin: 0 auto;
@@ -199,33 +203,51 @@ img, iframe {
     right: 10px;
 }
 
-.inicio p {
+.inicio p, .inicio_2 p {
     text-align: justify;
 }
 
 .inicio {
-    margin-bottom: 0px;
     text-align: center;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
     padding: 20px;
 }
 
-.imagen1-pc, .imagen2-pc, .imagen3-pc {
+.imagen2-pc {
     width: 80%;
     margin: 0 auto;
-    margin-bottom: 20px;
     border-radius: 20px;
 }
-
 .text-perfect-circle {
     width: 80%;
     margin-left: 10%;
-    font-size: 1em;
-    margin-bottom: 20px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    line-height: 1.6;
+    font-family: 'Rubik', sans-serif;
+}
+.inicio_2{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+.imagen3-pc{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    border-radius: 20px;
+    
+}
+.text-perfect-circle-tx2 {
+    width: 80%;
+    margin: 0 auto;
     line-height: 1.6;
     font-family: 'Rubik', sans-serif;
 }
@@ -317,7 +339,7 @@ img, iframe {
 }
 
 .nosotros{
-    margin-top: 80px;
+    margin-top: 50px;
     width: 100%;
     text-align: center;
     height: 80px;
@@ -337,21 +359,7 @@ img, iframe {
     width: 100%;
 }
 
-.compras,
-.tyd {
-    height: 450px;
-    width: 55%;
-    background-color: rgb(205, 211, 211);
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-    text-align: center;
-
-}
-
-.compras, .tyd, .implementacion, .invetario {
+.compras, .tyd, .implementacion, .inventario, .aduanas {
     height: 500px;
     width: 85%;
     background-color: rgb(205, 211, 211);
@@ -363,39 +371,29 @@ img, iframe {
     position: relative;
 }
 
-.aduanas{
-    height: 500px;
-    width: 85%;
-    background-color: rgb(205, 211, 211);
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-    position: relative;
-    padding-bottom: 80px; /* Añadir padding inferior para espacio extra */
-}
-
-.compras-img,
-.tyd-img {
-    height: 160px;
-}
-
-.imagen_compras, .imagen_transporte, .imagen_implementacion, .imagen_aduanas {
+.imagen_compras, .imagen_transporte, .imagen_implementacion, .imagen_aduanas, .imagen_inventario {
     height: 120px;
     margin-top: 25%;
 }
 
 .compras-tittle,
-.tyd-tittle {
+.tyd-tittle,
+.implementacion-tittle,
+.inventario-tittle,
+.aduanas-tittle {
     font-family: 'Rubik', sans-serif;
-    margin-top: 20px;
+    margin-top: 50px;
     font-size: 1em;
     text-align: center;
+    margin-bottom: 25px;
     
 }
 
-.compras-opciones{
+.compras-opciones,
+.tyd-opciones,
+.aduanas-opciones,
+.implementacion-opciones,
+.inventario-opciones{
     font-family: 'Rubik', sans-serif;
     margin: auto;
     width: 80%;
@@ -404,16 +402,11 @@ img, iframe {
     height: 50px;
 }
 
-.tyd-opciones{
-    font-family: 'Rubik', sans-serif;
-    margin: auto;
-    width: 80%;
-    text-align: center;
-    margin-bottom: 140px;
-    height: 50px;
-}
-
-.compras-btn {
+.compras-btn,
+.tyd-btn,
+.implementacion-btn,
+.inventario-btn,
+.aduanas-btn {
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -421,21 +414,8 @@ img, iframe {
     height: 45px;
 }
 
-.tyd-btn{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 45px;
-    margin-bottom: 20px;
-}
-
-
-.compras-btn{
-    margin-bottom: 40px;
-}
-
 .com-inv-btn,
-.tyd-inv-btn {
+.inventario-inv-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -456,101 +436,10 @@ img, iframe {
     cursor: pointer;
 }
 
-
-
-.compras-opciones ul li,
-.tyd-opciones ul li {
-    margin-bottom: 8px;
-    font-size: 16px;
-    color: #333;
-}
-
-.aduanas-img,
-.implementacion-img {
-    height: 120px;
-}
-
-.aduanas-tittle,
-.implementacion-tittle {
-    margin-top: 35px;
-    font-family: 'Nexa', sans-serif;
-    font-size: 1em;
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-.aduanas-opciones{
-    font-family: 'Rubik', sans-serif;
-    margin: auto;
-    width: 80%;
-    text-align: center;
-    margin-bottom: 120px;
-    height: 50px;
-}
-
-.implementacion-opciones {
-    font-family: 'Rubik', sans-serif;
-    width: 80%;
-    margin-top: 10px;
-}
-
-.aduanas-btn{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 45px;
-    margin-top: auto; /* Esto empuja el botón hacia abajo */
-    margin-bottom: 20px; /* Espacio inferior adicional */
-}
-
-.implementacion-btn {
-    margin-top: 70px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 45px;
-    font-family: 'Nexa', sans-serif;
-    font-size: 1em;
-}
-
-.aduanas-inv-btn,
-.implementacion-inv-btn {
-    height: 30px;
-    width: 48%;
-    border-radius: 14px;
-    background-color: rgb(212, 131, 131);
-    border: none;
-}
-
 .tyd-btn a, .aduanas-btn a, .implementacion-btn a, .compras-btn a, .inventario-btn a {
     text-decoration: none;
     color: black;
     border: none;
-}
-
-.aduanas-inv-btn:hover,
-.implementacion-inv-btn:hover {
-    transition: 2s;
-    background-color: wheat;
-    cursor: pointer;
-}
-
-.aduanas-opciones ul,
-.implementacion-opciones ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-.compras-opciones ul li,
-.aduanas-opciones ul li,
-.implementacion-opciones ul li {
-    margin-bottom: 8px;
-    font-size: 16px;
-    color: #333;
-    display: inline-block;
-    width: 100%;
 }
 
 .servicio-extra {
@@ -563,80 +452,10 @@ img, iframe {
     width: 100%;
 }
 
-.inventario {
-    height: 500px;
-    width: 85%;
-    background-color: rgb(205, 211, 211);
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-    position: relative;
-}
-
-.inventario-img, .imagen_inventarios {
-    height: 120px;
-    margin-top: 10%;
-}
-
-.inventario-tittle {
-    font-family: 'Nexa', sans-serif;
-    margin-top: 50px;
-    font-size: 1em;
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-.inventario-opciones {
-    font-family: 'Rubik', sans-serif;
-    width: 80%;
-}
-
-.inventario-btn {
-    font-family: 'Nexa', sans-serif;
-    font-size: 1em;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 90px;
-}
-
-.inventario-inv-btn {
-    height: 30px;
-    width: 48%;
-    border-radius: 14px;
-    background-color: rgb(212, 131, 131);
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    margin-top: 35px;
-    font-size: 1em;
-}
-
 .inventario-inv-btn:hover {
     transition: background-color 2s;
     background-color: wheat;
     cursor: pointer;
-}
-
-
-.inventario-opciones ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-.inventario-opciones ul li {
-    margin-bottom: 8px;
-    font-size: 16px;
-    color: #333;
-    display: inline-block;
-    width: 100%;
 }
 
 .socialmedia-tittle {
@@ -737,28 +556,18 @@ footer {
         padding: 0 20px;
     }
 
+    .Carrusell{
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
     .carrusel {
-        margin-top: 30px;
         max-width: 600px;
         border-radius: 15px;
+        
     }
 
     .imagen {
         height: 400px;
-    }
-
-    .tyd-opciones, .aduanas-opciones{
-        margin-bottom: 92%;
-    }
-
-    .aduanas-btn {
-        position: absolute;
-        bottom: 40px; /* Ajusta la distancia desde el fondo */
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        font-family: 'Rubik', sans-serif;
-        font-size: 1em;
     }
 
     .flecha {
@@ -818,7 +627,7 @@ footer {
         text-align: left;
     }
 
-    .inicio {
+    .inicio, .inicio_2 {
         margin-bottom: 90px;
         flex-direction: row;
         flex-wrap: wrap;
@@ -827,18 +636,17 @@ footer {
 
     .imagen1-pc,
     .imagen2-pc,
-    .imagen3-pc,
     .text-perfect-circle {
-        width: 39%;
+        width: 40%;
         height: 500px;
         margin-bottom: 20px;
     }
 
     .imagen3-pc {
         margin-top: 60px;
-        width: 20%;
+        width: 40%;
         margin-bottom: 20px;
-        height: 100px;
+        height: 300px;
     }
 
     .tx2 {
@@ -846,7 +654,7 @@ footer {
         font-family: 'Rubik', sans-serif;
     }
 
-    .text-perfect-circle {
+    .text-perfect-circle, .text-perfect-circle-tx2 {
         text-align: left;
         font-size: 1.1em;
         align-items: center;
@@ -915,11 +723,6 @@ footer {
         height: 50px;
     }
 
-    .inventario {
-        width: 21%;
-        margin: 0 auto;
-    }
-
     .mision,
     .vision {
         justify-content: space-between;
@@ -980,30 +783,43 @@ footer {
         display: none;
     }
 
-    .inicio {
+    .inicio, .inicio_2 {
         padding: 50px;
-        justify-content: space-between;
     }
 
-    .imagen1-pc,
-    .imagen2-pc,
-    .imagen3-pc,
     .text-perfect-circle {
-        width: 40%;
-        margin-bottom: 40px;
+        text-align: center;
+        width: 35%;
+        margin-left: 10%;
+        font-size: 1.2em;
+        height: 50%;
+        padding: 2%;
+        border-radius: 10%;
+        background-color: rgb(236, 232, 232);
     }
 
+    .imagen2-pc {
+        width: 30%;
+        height: 600px;
+        margin-bottom: 0%;
+    }
+    .text-perfect-circle-tx2{
+        width: 35%;
+        text-align: center;
+        margin-left: 15%;
+        font-size: 1.2em;
+        margin-top: 2%;
+        height: 50%;
+        padding: 2%;
+        border-radius: 10%;
+        background-color: rgb(236, 232, 232);
+
+    }
     .imagen3-pc {
         width: 25%;
-        height: 290px;
-        margin-right: 2%;
-    }
-
-    .text-perfect-circle {
-        text-align: left;
-        margin-left: 5%;
-        font-size: 1.2em;
-        margin-top: 70px;
+        height: 400px;
+        margin-top: 0%;
+        margin-left: 15%;
     }
 
     .servicios {
@@ -1016,7 +832,8 @@ footer {
     .compras,
     .tyd,
     .aduanas,
-    .implementacion {
+    .implementacion,
+    .inventario {
         width: 22%;
         margin-bottom: 0;
         margin-top: 20px;
@@ -1026,31 +843,37 @@ footer {
     .compras-img,
     .tyd-img,
     .aduanas-img,
-    .implementacion-img {
+    .implementacion-img
+    .inventario-img {
         height: 150px;
     }
 
     .compras-tittle,
     .tyd-tittle,
     .aduanas-tittle,
-    .implementacion-tittle {
+    .implementacion-tittle,
+    .inventario-tittle {
         font-size: 1.2em;
         font-family: 'Rubik', sans-serif;
     }
 
-    .compras-btn,
-    .tyd-btn,
-    .implementacion-btn {
-        position: absolute;
-        bottom: 20px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
+    .compras-opciones,
+    .tyd-opciones,
+    .aduanas-opciones,
+    .implementacion-opciones,
+    .inventario-opciones{
         font-family: 'Rubik', sans-serif;
-        font-size: 1em;
+        width: 70%;
+        margin-bottom: 80%;
+        text-align: center;
+        text-align: center;
     }
 
-    .aduanas-btn{
+    .compras-btn,
+    .tyd-btn,
+    .implementacion-btn,
+    .aduanas-btn,
+    .inventario-btn {
         position: absolute;
         bottom: 20px;
         width: 100%;
@@ -1058,13 +881,13 @@ footer {
         justify-content: center;
         font-family: 'Rubik', sans-serif;
         font-size: 1em;
-        margin-top: 80px;
     }
 
     .com-inv-btn,
     .tyd-inv-btn,
     .aduanas-inv-btn,
-    .implementacion-inv-btn {
+    .implementacion-inv-btn,
+    .inventario-inv-btn {
         height: 35px;
         width: 50%;
         font-family: 'Rubik', sans-serif;
