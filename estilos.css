@@ -228,6 +228,10 @@ img, iframe {
     margin-bottom: 5%;
     line-height: 1.6;
     font-family: 'Rubik', sans-serif;
+    padding: 3%;
+    border-radius: 10%;
+    background-color: rgb(236, 232, 232);
+    box-shadow: 5px 5px 15px #000000da;
 }
 .inicio_2{
     text-align: center;
@@ -250,6 +254,10 @@ img, iframe {
     margin: 0 auto;
     line-height: 1.6;
     font-family: 'Rubik', sans-serif;
+    padding: 3%;
+    border-radius: 10%;
+    background-color: rgb(236, 232, 232);
+    box-shadow: 5px 5px 15px #000000da;
 }
 
 .mision-vision {
@@ -339,11 +347,11 @@ img, iframe {
 }
 
 .nosotros{
-    margin-top: 50px;
     width: 100%;
+    outline: auto;
+    margin-top: 50px;
     text-align: center;
-    height: 80px;
-    margin-bottom: 0px;
+    margin-bottom: 50px;
 }
 
 .tittle-section-myv h1 {
@@ -796,6 +804,32 @@ footer {
         padding: 2%;
         border-radius: 10%;
         background-color: rgb(236, 232, 232);
+    }
+
+    .nosotros{
+        width: 20%;
+        outline: auto;
+        margin: 50px auto;
+        margin-bottom: 100px;
+        text-align: center;
+        
+    }
+
+    .nosotros h1{
+        padding: 10%;
+    }
+
+    .servicios-titulo{
+        width: 20%;
+        outline: auto;
+        margin:auto;
+        margin-bottom: 190px;
+        text-align: center;
+    }
+    
+    .servicios-titulo h1{
+        padding: 10%;
+        margin-top: 40px;
     }
 
     .imagen2-pc {
