@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transporte</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <div class="encabezado">
+        <hr>
+    </div>
+</head>
+<body>
+    <section class="superior">
+        <div class="logo-container">
+            <img src="img/Grupo Transremontlogo.webp" alt="Logo" class="logo-img">
+        </div>
+        <div class="icon-home">
+            <a class="bx bx-home" href="/web/index.html"></a>
+        </div>
+    </section>
+
+    <section class="servicios">
+        <div class="menu-ver">
+            <a href="#inicio" onclick="showContent('inicio')">Servicios</a>
+            <a href="#inicio" onclick="showContent('Proyectos')">Proyectos</a>
+            <a href="#quienes-somos" onclick="showContent('Auditorias')">Auditorias</a>
+            <a href="#nuestros-servicios" onclick="showContent('Aduanas')">Aduanas</a>
+            <a href="#contacto" onclick="showContent('Transporte')">Transporte</a>
+            <a href="#contacto" onclick="showContent('Inventario')">Inventario</a>
+        </div>
+
+        <div class="content">
+            <div id="inicio" class="info">
+                <h1>Inicio</h1>
+                <p>Estos son los servicios que ofrecemos, cualquier consulta para conocer algun servicio mas a fondo, puede comunicarse con nosotros en el apartado de contacto</p>
+            </div>
+            <div id="Proyectos" class="info">
+                <h1>Bienvenido a Nuestra Página</h1>
+                <p>Esta es la sección de inicio, donde puedes encontrar información general.</p>
+            </div>
+            <div id="Auditorias" class="info">
+                <h1>Quiénes Somos</h1>
+                <p>Aquí puedes aprender más sobre nosotros y nuestra misión.</p>
+            </div>
+            <div id="Aduanas" class="info">
+                <h1>Nuestros Servicios</h1>
+                <p>Conoce los servicios que ofrecemos a nuestros clientes.</p>
+            </div>
+            <div id="Transporte" class="info">
+                <h1>Contacto</h1>
+                <p>Puedes comunicarte con nosotros a través de este formulario.</p>
+            </div>
+            <div id="Inventario" class="info">
+                <h1>Contacto</h1>
+                <p>Puedes comunicarte con nosotros a través de este formulario.</p>
+            </div>
+        </div>
+        <script>
+            function showContent(section) {
+                // Ocultar todas las secciones
+                const infos = document.querySelectorAll('.info');
+                infos.forEach(info => {
+                    info.style.display = 'none';
+                });
+        
+                // Mostrar la sección seleccionada
+                const selectedSection = document.getElementById(section);
+                if (selectedSection) {
+                    selectedSection.style.display = 'block';
+                }
+            }
+        
+            // Mostrar la sección de inicio por defecto
+            document.addEventListener('DOMContentLoaded', () => {
+                showContent('inicio');
+            });
+        </script>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <div class="mail-link">
+                    <a href="mailto:Gerencia@transremont.com">Gerencia@transremont.com</a>
+                </div>
+                <p>+506 4020-2223</p>
+            </div>
+            <div class="footer-section">
+                <div class="icons">
+                <h3>Redes Sociales</h3>
+                <div class="icon-youtube">
+                    <a class='bx bxl-youtube' href="https://www.youtube.com/channel/UC4eg_K1ZUdShw4_0dVh2YvQ"></a>
+                </div>
+                <div class="icon-instagram">
+                    <a class='bx bxl-instagram-alt' href="https://www.instagram.com/?hl=es"></a>
+                </div>
+                <div class="icon-facebook">
+                    <a class='bx bxl-facebook-circle' href="https://www.facebook.com/grupotransremontcr/?locale=es_LA"></a>
+                </div>
+                <div class="icon-linkedin">
+                    <a class='bx bxl-linkedin-square' href="https://cr.linkedin.com/company/grupotransremont"></a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">&copy;Derechos Reservados, Tranremont S.A. Creada por Agencia Vital</p>
+        </div>
+    </footer>
+
+    
+</footer>
+</body>
+</html>
