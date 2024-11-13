@@ -61,9 +61,20 @@
     transition: color 0.3s;
 }
 
-.icon-youtube, .icon-linkedin, .icon-instagram, .icon-facebook {
+.icon-youtube, .icon-linkedin, .icon-instagram, .icon-facebook, .icon-home{
     font-size: 3rem;
     text-align: center;
+}
+
+.icon-home a{
+    color: black; /* Cambia el color del icono a negro */
+    text-decoration: none; /* Elimina la línea debajo del enlace */
+    
+}
+
+.icon-home a:hover{
+    text-decoration: underline;
+    transition: 0.5s;
 }
 
 .p {

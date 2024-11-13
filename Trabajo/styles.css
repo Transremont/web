@@ -215,10 +215,22 @@ img, iframe {
     transition: color 0.3s; 
 }
 
-.icon-youtube, .icon-linkedin, .icon-instagram, .icon-facebook {
+.icon-youtube, .icon-linkedin, .icon-instagram, .icon-facebook, .icon-home{
     font-size: 3rem;
     text-align: center;
 } 
+
+.icon-home a{
+    color: black; /* Cambia el color del icono a negro */
+    text-decoration: none; /* Elimina la línea debajo del enlace */
+    
+}
+
+.icon-home a:hover{
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
 
 .linkedin:hover {
     transform: scale(1.1);
@@ -299,9 +311,19 @@ footer {
 }
 
 @media (min-width: 768px) { 
+
+    .icon-home {
+        margin-right: 19%;
+    }
+
     .terminos {
         font-size: 12px; 
         height: 40px;    
+    }
+
+    .logo-container {
+        width: auto;
+        margin-left: 120px;
     }
     
     .mision, .vision {
@@ -390,7 +412,10 @@ footer {
         height: 50px;    
     }
 
-    
+    .logo-container {
+        width: auto;
+        margin-left: 120px;
+    }
     
     
     .mision, .vision {
