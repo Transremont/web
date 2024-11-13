@@ -34,7 +34,6 @@ img, iframe {
     align-items: center;
     text-align: center;
     width: 100%;
-    
     z-index: 1000;
     padding: 0 20px;
     display: flex;

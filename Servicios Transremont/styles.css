@@ -23,7 +23,7 @@ html, body {
     align-items: center;
     text-align: center;
     width: 100%;
-    background-color: rgb(236, 232, 232);
+    background-color: rgb(255, 255, 255);
     z-index: 1000;
     padding: 0 20px;
     display: flex;
@@ -78,8 +78,8 @@ html, body {
 }
 
 .menu-ver {
-    width: 30%; /* Ancho del menú */
-    background-color: #333;
+    width: 33%; /* Ancho del menú */
+    background-color: #752b2b;
     height: 650px;
     padding-top: 20px;
     font-family: 'Rubik', sans-serif;
@@ -87,17 +87,24 @@ html, body {
 .menu-ver a {
     color: white;
     text-decoration: none;
-    margin-top: 50px;
+    margin-top: 40px;
     padding: 15px 20px;
+    font-size: 20px;
     display: block; /* Cada enlace ocupa toda la línea */
 }
 .menu-ver a:hover {
-    background-color: #575757; /* Color al pasar el mouse */
+    background-color: #752b2b; /* Color al pasar el mouse */
 }
 
 .content {
     width: 70%;
-    padding: 3%;
+    padding: 2%;
+    background-color: rgb(236, 232, 232);
+}
+.info{
+    align-items: center;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
 }
 
 .info {
