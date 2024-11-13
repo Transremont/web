@@ -346,12 +346,12 @@ img, iframe {
     font-size: 40px;
 }
 
-.nosotros{
+.nosotros, .servicios-titulo{
     width: 100%;
     outline: auto;
     margin-top: 50px;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .tittle-section-myv h1 {
@@ -360,7 +360,6 @@ img, iframe {
 }
 
 .servicios {
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -375,6 +374,7 @@ img, iframe {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
     margin-bottom: 20px;
     position: relative;
 }
