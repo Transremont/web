@@ -564,6 +564,14 @@ footer {
         padding: 0 20px;
     }
 
+    .nav-item{
+        text-decoration: underline;
+    }
+
+    .nav-contacto{
+        text-decoration: none;
+    }
+    
     .Carrusell{
         padding-top: 3%;
         padding-bottom: 3%;
