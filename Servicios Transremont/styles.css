@@ -142,7 +142,18 @@ html, body {
     transition: color 0.3s;
 }
 
-.icon-youtube, .icon-linkedin, .icon-instagram, .icon-facebook {
+.icon-home a{
+    color: black; /* Cambia el color del icono a negro */
+    text-decoration: none; /* Elimina la línea debajo del enlace */
+    
+}
+
+.icon-home a:hover{
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+.icon-youtube, .icon-linkedin, .icon-instagram, .icon-facebook, .icon-home{
     font-size: 3rem;
     text-align: center;
 }
@@ -226,7 +237,7 @@ footer {
 
     .logo-container {
         width: auto;
-        margin: 0;
+        margin-left: 120px;
     }
 
     .menu {
@@ -237,6 +248,9 @@ footer {
     }
     .titulo{
         font-size: 2rem;
+    }
+    .icon-home {
+        margin-right: 19%;
     }
 }
 
