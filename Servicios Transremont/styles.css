@@ -101,13 +101,11 @@ html, body {
     padding: 2%;
     background-color: rgb(236, 232, 232);
 }
-.info{
+
+.info {
     align-items: center;
     text-align: center;
     font-family: 'Rubik', sans-serif;
-}
-
-.info {
     display: none; /* Ocultar información por defecto */
 }
 
@@ -246,6 +244,40 @@ footer {
         font-size: 24px;
         gap: 40px;
     }
+
+    .menu-ver {
+        width: 15%; /* Ancho del menú */
+        background-color: #752b2b;
+        height: 810px;
+        padding-top: 20px;
+        font-family: 'Rubik', sans-serif;
+    }
+    .menu-ver a {
+        color: white;
+        text-decoration: none;
+        margin-top: 60px;
+        text-align: center;
+        padding: 15px 20px;
+        font-size: 20px;
+        display: block; /* Cada enlace ocupa toda la línea */
+    }
+    .menu-ver a:hover {
+        background-color: #471717; /* Color al pasar el mouse */
+    }
+
+    .content {
+        width: 85%;
+        padding: 2%;
+        background-color: rgb(236, 232, 232);
+    }
+    
+    .info {
+        align-items: center;
+        text-align: center;
+        font-family: 'Rubik', sans-serif;
+        display: none; /* Ocultar información por defecto */
+    }
+
     .titulo{
         font-size: 2rem;
     }
