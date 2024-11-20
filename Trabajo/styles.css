@@ -261,6 +261,11 @@ img, iframe {
     transform: scale(1.1);
 }
 
+.link-politica{
+    padding-left: 35%;
+    font-size: 80%;
+}
+
 footer {
     background-color: #000000dc;
     color: rgb(236, 232, 232);
@@ -304,10 +309,6 @@ footer {
     font-size: 80%;
 }
 
-.link-politica{
-    padding-left: 35%;
-    font-size: 80%;
-}
 
 .footer-section a:hover {
     text-decoration: underline;
