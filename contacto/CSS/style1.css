@@ -99,6 +99,7 @@
 
 .link-politica{
     padding-left: 35%;
+    font-size: 80%;
 }
 
 footer {
@@ -125,7 +126,7 @@ footer {
 .footer-section p {
     margin: 10% 0;
     text-align: center;
-    font-size: 105%;
+    font-size: 80%;
 }
 
 .footer-section a {
@@ -141,7 +142,7 @@ footer {
     text-decoration: none;
     margin: 10% 0;
     text-align: center;
-    font-size: 105%;
+    font-size: 80%;
 }
 
 .footer-section a:hover {
@@ -163,5 +164,23 @@ footer {
 
     .imagenes {
         width: 3rem;
+    }
+}
+@media (min-width: 1024px) {
+    .link-politica{
+        padding-left: 35%;
+        font-size: 110%;
+    }
+    .mail-link {
+        color: rgb(236, 232, 232);
+        text-decoration: none;
+        margin: 10% 0;
+        text-align: center;
+        font-size: 105%;
+    }
+    .footer-section p {
+        margin: 10% 0;
+        text-align: center;
+        font-size: 110%;
     }
 }
