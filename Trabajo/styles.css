@@ -34,7 +34,7 @@ img, iframe {
     align-items: center;
     text-align: center;
     width: 100%;
-    background-color: rgb(236, 232, 232);
+    background-color: rgb(255, 255, 255);
     z-index: 1000;
     padding: 0 20px;
     display: flex;
