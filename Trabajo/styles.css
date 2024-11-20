@@ -173,8 +173,21 @@ img, iframe {
     font-family: 'Rubik', sans-serif;
 }
 
-.punto-4, .punto-5 {
-    margin: 0 auto;
+.punto-4{
+    margin-left: 17%;
+    background-color: rgb(236, 232, 232);
+    box-shadow: 5px 5px 15px #000000da;
+    width: 30%;
+    padding-top: 3%;
+    padding-bottom: 4%;
+    padding-right: 1%;
+    padding-left: 1%;
+    border-radius: 20px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.punto-5 {
+    margin-left: 7%;
     background-color: rgb(236, 232, 232);
     box-shadow: 5px 5px 15px #000000da;
     width: 30%;
