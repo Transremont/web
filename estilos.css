@@ -501,6 +501,10 @@ img, iframe {
     transform: scale(1.1);
 }
 
+.link-politica{
+    padding-left: 35%;
+}
+
 footer {
     background-color: #000000dc;
     color: rgb(236, 232, 232);
