@@ -83,6 +83,8 @@ img, iframe {
     margin-top: 20%;
     margin-bottom: 5%;
     font-size: 160%;
+    padding-bottom: 5%;
+    border-bottom: 2px solid rgba(130,54,73,255);;
 }
 
 .cuerpo p{
