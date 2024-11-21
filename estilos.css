@@ -318,7 +318,7 @@ img, iframe {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(IMG/imagen\ Vision.jpg);
+    background-image: url(/web/IMG/imagen\ Vision.jpg);
     background-size: cover;
     background-position: center;
     opacity: 0.5;
@@ -367,7 +367,7 @@ img, iframe {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(IMG/imagen\ Mision.jpg);
+    background-image: url(/web/IMG/imagen\ Mision.jpg);
     background-size: cover;
     background-position: center;
     opacity: 0.7;
