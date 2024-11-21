@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline:none;
+    outline: none;
     scroll-behavior: smooth;
 }
 
@@ -308,7 +308,7 @@ img, iframe {
     padding: 20px;
     margin: 0;
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
     color: whitesmoke;
 }
@@ -618,28 +618,44 @@ footer {
 
     .mision {
         flex-direction: row-reverse;
+        height: 280px;
     }
+
+    
 
     .title-mision {
         order: 2;
         width: 50%;
         text-align: right;
+        height: 280px;
+        font-size: 18px;
+
+    }
+
+    .title-mision p{
+        text-align: left;
+        width: 80%;
     }
 
     .text-mision {
         order: 1;
         width: 50%;
         text-align: left;
+        font-size: 25px;
+        height: 280px;
     }
 
     .vision {
         flex-direction: row-reverse;
+        height: 280px;
     }
 
     .title-vision {
         order: 2;
         width: 50%;
         text-align: right;
+        font-size: 25px;
+        height: 280px;
     }
 
     .compras-opciones{
@@ -650,6 +666,15 @@ footer {
         order: 1;
         width: 50%;
         text-align: left;
+        font-size: 20px;
+        height: 280px;
+        
+    }
+
+    .text-vision p{
+        font-size: 18px;
+        width: 80%;
+        text-align: right;
     }
 
     .inicio, .inicio_2 {
@@ -740,6 +765,11 @@ footer {
     .nl-contact:hover {
         color: black;
     }
+
+    .text-perfect-circle-tx2{
+        margin-top: 6%;
+    }
+
 }
 
 @media (min-width: 1024px) {
@@ -751,7 +781,7 @@ footer {
     .mision,
     .vision {
         justify-content: space-between;
-        width: 80%;
+        width: 65%;
     }
 
     .title-mision,
@@ -856,6 +886,7 @@ footer {
     }
 
     .text-perfect-circle {
+        margin-top: 90px;
         height: 50%;
         text-align: center;
         width: 30%;
@@ -875,10 +906,11 @@ footer {
         border-radius: 3%;
         background-color: rgb(236, 232, 232);
     }
+
     .text-perfect-circle-tx2{
         width: 30%;
         height: 50%;
-        margin-top: 3%;
+        margin-top: 6%;
         font-size: 1.2em;
         border-radius: 10%;
         background-color: rgb(236, 232, 232);
