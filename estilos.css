@@ -700,6 +700,11 @@ footer {
         font-size: 25px;
         height: 280px;
         border-top-right-radius: 10px;
+        position: relative;
+    }
+
+    .text-mision::before {
+        border-top-right-radius: 10px;
     }
 
     .vision {
@@ -714,15 +719,18 @@ footer {
         font-size: 25px;
         height: 280px;
         border-bottom-left-radius: 10px;
+        position: relative;
+    }
+
+    .title-vision::before {
+        border-bottom-left-radius: 10px;
     }
 
     .tv{
         border-bottom-left-radius: 10px;
     }
 
-    .tm{
-        border-top-right-radius: 10px;        
-    }
+    
 
     .compras-opciones{
         margin-bottom: 88%;
