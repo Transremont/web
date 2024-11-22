@@ -716,6 +716,14 @@ footer {
         border-bottom-left-radius: 10px;
     }
 
+    .tv{
+        border-bottom-left-radius: 10px;
+    }
+
+    .tm{
+        border-top-right-radius: 10px;        
+    }
+
     .compras-opciones{
         margin-bottom: 88%;
     }
