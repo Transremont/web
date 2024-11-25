@@ -79,7 +79,7 @@ html, body {
 
 .menu-ver {
     width: 33%; /* Ancho del menú */
-    background-color: #752b2b;
+    background-color: rgba(130, 54, 73, 255);
     height: 650px;
     padding-top: 20px;
     font-family: 'Rubik', sans-serif;
@@ -252,7 +252,7 @@ footer {
 
     .menu-ver {
         width: 15%; /* Ancho del menú */
-        background-color: #752b2b;
+        background-color: rgba(130, 54, 73, 255);
         height: 810px;
         padding-top: 20px;
         font-family: 'Rubik', sans-serif;
@@ -264,10 +264,10 @@ footer {
         text-align: center;
         padding: 15px 20px;
         font-size: 20px;
-        display: block; /* Cada enlace ocupa toda la línea */
+        display: block; 
     }
     .menu-ver a:hover {
-        background-color: #471717; /* Color al pasar el mouse */
+        background-color: #471717;
     }
     .content {
         width: 85%;
