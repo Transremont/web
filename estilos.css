@@ -478,26 +478,32 @@ img, iframe {
 }
 
 .com-inv-btn,
-.inventario-inv-btn {
+.inventario-inv-btn{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 30px;
     width: 48%;
     border-radius: 14px;
-    background-color: rgb(212, 131, 131);
+    background-color: rgba(130, 54, 73, 255);
     border: none;
-    text-decoration: none;
-    color: white;
+    color: rgb(245, 245, 245);
+    font-weight: bold;
     font-family: 'Rubik', sans-serif;
+}
+
+.com-inv-btn p,.inventario-btn p{
+    color: rgb(236, 219, 219);
 }
 
 .com-inv-btn:hover,
 .tyd-inv-btn:hover {
-    transition: 2s;
-    background-color: wheat;
+    transition: 0.1s;
+    background-color: rgb(177, 102, 102);
     cursor: pointer;
 }
+
+
 
 .tyd-btn a, .aduanas-btn a, .implementacion-btn a, .compras-btn a, .inventario-btn a {
     text-decoration: none;
@@ -516,8 +522,8 @@ img, iframe {
 }
 
 .inventario-inv-btn:hover {
-    transition: background-color 2s;
-    background-color: wheat;
+    transition: background-color 0.1s;
+    background-color: rgb(177, 102, 102);
     cursor: pointer;
 }
 
