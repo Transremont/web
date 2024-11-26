@@ -622,7 +622,45 @@ footer {
     margin-top: 2%;
 }
 
+.zf{
+    height: 300px;
+    text-align: justify;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.zf_tittle{
+    margin-bottom: 30%;
+}
+
+
+
+.zf_desc{
+    font-family: 'Nexa', sans-serif;
+    width: 80%;
+    margin: auto;
+    font-size: 16px;
+}
+
+
+
 @media (min-width: 768px) {
+
+    .zf {
+        height: auto;
+    }
+
+    .zf_tittle{
+       width: 300px;
+        
+    }
+
+    .zf_desc {
+        font-size: 18px;
+        width: auto;
+        margin-top: 90px;
+    }
+
     .contenedor-principal {
         width: 100%;
         max-width: 1200px;
@@ -853,6 +891,24 @@ footer {
 }
 
 @media (min-width: 1024px) {
+
+    .zf {
+        height: 350px;
+        margin-bottom: 6cm;
+    }
+
+    .zf_tittle {
+        padding-bottom: 65px;
+        
+    }
+
+    
+
+    .zf_desc {
+        font-size: 24px;
+        width: 60%;
+    }
+
     .terminos {
         font-size: 14px;
         height: 50px;
@@ -947,7 +1003,7 @@ footer {
     }
 
     .servicios-titulo{
-        width: 25%;
+        width: 35%;
         outline: auto;
         margin:auto;
         margin-bottom: 190px;
