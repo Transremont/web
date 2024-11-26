@@ -80,16 +80,17 @@ html, body {
 .menu-ver {
     width: 33%; /* Ancho del menú */
     background-color: rgba(130, 54, 73, 255);
-    height: 650px;
+    height: 550px;
     padding-top: 20px;
     font-family: 'Rubik', sans-serif;
+    font-weight: bold;
 }
 .menu-ver a {
     color: white;
     text-decoration: none;
     margin-top: 40px;
-    padding: 15px 20px;
-    font-size: 20px;
+    padding: 10px 20px;
+    font-size: 92%;
     display: block; /* Cada enlace ocupa toda la línea */
 }
 .menu-ver a:hover {
@@ -100,13 +101,19 @@ html, body {
     width: 70%;
     padding: 2%;
     background-color: rgb(236, 232, 232);
+    
 }
 
 .info {
+    padding: 10%;
     align-items: center;
     text-align: center;
+    font-size: 90%;
     font-family: 'Rubik', sans-serif;
     display: none; /* Ocultar información por defecto */
+}
+.info p{
+    margin-top: 15%;
 }
 
 .socialmedia-tittle {
@@ -251,7 +258,7 @@ footer {
     }
 
     .menu-ver {
-        width: 15%; /* Ancho del menú */
+        width: 15%; 
         background-color: rgba(130, 54, 73, 255);
         height: 810px;
         padding-top: 20px;
@@ -276,10 +283,22 @@ footer {
     }
     
     .info {
-        align-items: center;
-        text-align: center;
         font-family: 'Rubik', sans-serif;
         display: none; /* Ocultar información por defecto */
+    }
+    .info h1{
+        text-align: center;
+        font-size: 300%;
+    }
+    .info p{
+        margin-top: 5%;
+        font-size: 150%;
+    }
+    .uno{
+        text-align: left;
+    }
+    .dos{
+        text-align: right;
     }
 
     .titulo{
