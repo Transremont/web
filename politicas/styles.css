@@ -91,7 +91,7 @@ img, iframe {
     font-size: 120%;
 }
 
-.info-personal{
+.manejo_residuos{
     margin-bottom: 20%;
 }
 
@@ -254,9 +254,9 @@ footer {
     .cuerpo p{
         font-size: 100%;
     }
-    
-    .info-personal{
-        margin-bottom: 10%;
+
+    .manejo_residuos {
+        margin-bottom: 5%;
     }
 
     .superior {
