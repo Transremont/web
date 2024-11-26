@@ -80,7 +80,7 @@ html, body {
 .menu-ver {
     width: 33%; /* Ancho del menú */
     background-color: rgba(130, 54, 73, 255);
-    height: 570px;
+    height: 600px;
     padding-top: 20px;
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
