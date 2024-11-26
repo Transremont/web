@@ -105,7 +105,8 @@ html, body {
 }
 
 .info {
-    padding: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
     align-items: center;
     text-align: center;
     font-size: 90%;
@@ -113,7 +114,11 @@ html, body {
     display: none; /* Ocultar información por defecto */
 }
 .info p{
-    margin-top: 15%;
+    margin-top: 16%;
+}
+
+.info ul{
+    font-size: 70%;
 }
 
 .socialmedia-tittle {
@@ -288,17 +293,12 @@ footer {
     }
     .info h1{
         text-align: center;
+        margin-top: 2%;
         font-size: 300%;
     }
     .info p{
-        margin-top: 5%;
+        margin-top: 7%;
         font-size: 150%;
-    }
-    .uno{
-        text-align: left;
-    }
-    .dos{
-        text-align: right;
     }
 
     .titulo{
