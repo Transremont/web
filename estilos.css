@@ -622,18 +622,43 @@ footer {
     margin-top: 2%;
 }
 
-.zf{
-    height: 300px;
+.zf {
+    position: relative;
+    height: 390px;
     text-align: justify;
     align-items: center;
     margin-bottom: 100px;
+    color: black;  /* Asegura que el texto sea visible */
+    z-index: 1;
+}
+
+.zf::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(IMG/zona_franca.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.zf > * {
+    position: relative;
+    z-index: 2;
 }
 
 .zf_tittle{
+
     margin-bottom: 30%;
 }
 
-
+.espacio_zf{
+    height: 8px;
+}
 
 .zf_desc{
     font-family: 'Nexa', sans-serif;
@@ -647,12 +672,12 @@ footer {
 @media (min-width: 768px) {
 
     .zf {
-        height: auto;
+       height: 300px;
     }
 
     .zf_tittle{
        width: 300px;
-        
+
     }
 
     .zf_desc {
@@ -893,8 +918,8 @@ footer {
 @media (min-width: 1024px) {
 
     .zf {
-        height: 350px;
-        margin-bottom: 6cm;
+        height: 500px;
+        margin-bottom: 4cm;
     }
 
     .zf_tittle {
@@ -902,7 +927,9 @@ footer {
         
     }
 
-    
+    .espacio_zf{
+        height: 1px;
+    }
 
     .zf_desc {
         font-size: 24px;
