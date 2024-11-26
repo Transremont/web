@@ -104,21 +104,49 @@ html, body {
     
 }
 
-.info {
+.info h1{
+    margin-top: 5%;
+}
+
+.cont_inicio, .cont_proyectos, .cont_auditoria, .cont_aduanas, .cont_transporte, .cont_inventario{
     padding-left: 10%;
     padding-right: 10%;
     align-items: center;
     text-align: center;
-    font-size: 90%;
     font-family: 'Rubik', sans-serif;
-    display: none; /* Ocultar información por defecto */
+    
 }
-.info p{
+
+.cont_inicio p {
     margin-top: 16%;
 }
 
-.info ul{
-    font-size: 70%;
+.cont_proyectos p {
+    margin-top: 12%;
+    font-size: 80%;
+}
+
+.cont_auditoria p{
+    font-size: 85%;
+    margin-top: 15%;
+}
+
+.cont_transporte h2{
+    font-size: 110%;
+    margin-bottom: 2%;
+}
+
+.cont_transporte p{
+    font-size: 90%;
+    margin-bottom: 10%;
+}
+
+.cont_aduanas p{
+    margin-top: 15%;
+}
+
+.cont_inventario p{
+    margin-top: 15%;
 }
 
 .socialmedia-tittle {
@@ -286,19 +314,42 @@ footer {
         padding: 2%;
         background-color: rgb(236, 232, 232);
     }
-    
-    .info {
-        font-family: 'Rubik', sans-serif;
-        display: none; /* Ocultar información por defecto */
-    }
+
     .info h1{
-        text-align: center;
-        margin-top: 2%;
-        font-size: 300%;
+        font-size: 220%;
     }
-    .info p{
+
+    .cont_inicio p{
         margin-top: 7%;
+        font-size: 120%;
+    }
+
+    .cont_proyectos p{
+        font-size: 130%;
+        margin-top: 6%;
+    }
+    .cont_auditoria p{
         font-size: 150%;
+        margin-top: 10%;
+    }
+    
+    .cont_aduanas p {
+        font-size: 150%;
+        margin-top: 10%;
+    }
+
+    .cont_transporte p {
+        font-size: 120%;
+        margin-bottom: 7%;
+    }
+
+    .cont_transporte h2{
+        font-size: 160%;
+    }
+
+    .cont_inventario p{
+        font-size: 150%;
+        margin-top: 10%;
     }
 
     .titulo{
